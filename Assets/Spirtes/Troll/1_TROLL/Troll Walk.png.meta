@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: b4ad99e427d9c7f4c998659f64aff70f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6688502295150247158
+    second: Troll Walk_0
+  - first:
+      213: -5322597041107218882
+    second: Troll Walk_1
+  - first:
+      213: 8230817885480565717
+    second: Troll Walk_2
+  - first:
+      213: 508275655694845608
+    second: Troll Walk_3
+  - first:
+      213: -7188863391045164101
+    second: Troll Walk_4
+  - first:
+      213: 1569091507427287573
+    second: Troll Walk_5
+  - first:
+      213: 3437265936855824603
+    second: Troll Walk_6
+  - first:
+      213: -4371516152516695054
+    second: Troll Walk_7
+  - first:
+      213: 1106279052461542660
+    second: Troll Walk_8
+  - first:
+      213: -4056264852655089477
+    second: Troll Walk_9
+  - first:
+      213: 3792034304126308836
+    second: Troll Walk_0
+  - first:
+      213: -8250796693027012597
+    second: Troll Walk_1
+  - first:
+      213: -1761720935477417375
+    second: Troll Walk_2
+  - first:
+      213: 801109575972040953
+    second: Troll Walk_3
+  - first:
+      213: -398740563387567614
+    second: Troll Walk_4
+  - first:
+      213: 4228245213144222150
+    second: Troll Walk_5
+  - first:
+      213: 3270501707744521989
+    second: Troll Walk_6
+  - first:
+      213: 5673744367554028182
+    second: Troll Walk_7
+  - first:
+      213: -2258489064998592190
+    second: Troll Walk_8
+  - first:
+      213: 4862402556286112838
+    second: Troll Walk_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Troll Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9054
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15b89cb1300a430800000000000000
+      internalID: 3792034304126308836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8048
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00482e4f184f7d80800000000000000
+      internalID: -8250796693027012597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7042
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aef77a42c1d87e0800000000000000
+      internalID: -1761720935477417375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6036
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f03af53aec1e1b00800000000000000
+      internalID: 801109575972040953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5030
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202beb9f193677af0800000000000000
+      internalID: -398740563387567614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4024
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c905b08e9ebdaa30800000000000000
+      internalID: 4228245213144222150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3018
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fab6fa9f7236d20800000000000000
+      internalID: 3270501707744521989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2012
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6926e6601703dbe40800000000000000
+      internalID: 5673744367554028182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241a7af492c38a0e0800000000000000
+      internalID: -2258489064998592190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Walk_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1606
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6449262ec59ba7340800000000000000
+      internalID: 4862402556286112838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

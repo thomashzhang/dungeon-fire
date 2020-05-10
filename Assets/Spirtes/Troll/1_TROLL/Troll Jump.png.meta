@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 73034be32903e0848837353ab48f6f0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2727319228307281745
+    second: Troll Jump_0
+  - first:
+      213: 4955353765058746123
+    second: Troll Jump_1
+  - first:
+      213: -2244366480885524164
+    second: Troll Jump_2
+  - first:
+      213: -3788376257274123201
+    second: Troll Jump_3
+  - first:
+      213: 3656480927485387526
+    second: Troll Jump_4
+  - first:
+      213: -4125142730221098976
+    second: Troll Jump_5
+  - first:
+      213: -6312184245130379578
+    second: Troll Jump_6
+  - first:
+      213: -250940970759899092
+    second: Troll Jump_7
+  - first:
+      213: -2177074832757817216
+    second: Troll Jump_8
+  - first:
+      213: 3199714716685872675
+    second: Troll Jump_9
+  - first:
+      213: 6423881641426671270
+    second: Troll Jump_0
+  - first:
+      213: -6822366508638490870
+    second: Troll Jump_1
+  - first:
+      213: -7059138296827185066
+    second: Troll Jump_2
+  - first:
+      213: 4191047199017983797
+    second: Troll Jump_3
+  - first:
+      213: -7841393464177370284
+    second: Troll Jump_4
+  - first:
+      213: 8765080338290688192
+    second: Troll Jump_5
+  - first:
+      213: -5895820303278805779
+    second: Troll Jump_6
+  - first:
+      213: -3369515936737013673
+    second: Troll Jump_7
+  - first:
+      213: 8878328346430981817
+    second: Troll Jump_8
+  - first:
+      213: -408556736310722383
+    second: Troll Jump_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Troll Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9090
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6d3645156362950800000000000000
+      internalID: 6423881641426671270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8080
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fa41d8ec51251a0800000000000000
+      internalID: -6822366508638490870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7070
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6587245be17e80e90800000000000000
+      internalID: -7059138296827185066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6060
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fdc5ee837992a30800000000000000
+      internalID: 4191047199017983797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5050
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b53a79036cd2390800000000000000
+      internalID: -7841393464177370284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4040
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0c397d022d3a970800000000000000
+      internalID: 8765080338290688192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3030
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dece78beba6dd2ea0800000000000000
+      internalID: -5895820303278805779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2020
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d5c5ab131d31d0800000000000000
+      internalID: -3369515936737013673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1010
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6cc487798263b70800000000000000
+      internalID: 8878328346430981817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Troll Jump_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1610
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b04b9d10d3845af0800000000000000
+      internalID: -408556736310722383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
