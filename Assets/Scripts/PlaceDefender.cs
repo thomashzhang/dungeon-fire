@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class PlaceDefender : MonoBehaviour
 {
-    [SerializeField] GameObject defender;
+    private Defender defender;
     private void OnMouseDown()
     {
         CreateDefender(GetSquareClicked());
+    }
+
+    public void SetSelectedDefender(Defender defender)
+    {
+        this.defender = defender;
     }
 
     private Vector2 GetSquareClicked()
@@ -21,6 +26,9 @@ public class PlaceDefender : MonoBehaviour
 
     private void CreateDefender(Vector2 position)
     {
-        var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
+        if (defender != null)
+        {
+            var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
+        }
     }
 }
