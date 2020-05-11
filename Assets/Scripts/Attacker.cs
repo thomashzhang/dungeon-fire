@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
     [Range(0f, 10f)] [SerializeField] float currentSpeed = 1f;
-
+    [SerializeField] Animation deathAnitmation;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +22,18 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+
+    internal void PlayDeathAnimationAndDestory()
+    {
+        if (deathAnitmation != null)
+        {
+            deathAnitmation.Play();
+            Destroy(gameObject, 3f);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 1
+  deathAnitmation: {fileID: 0}
 --- !u!50 &924779452
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +180,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deathVFX: {fileID: 194062, guid: 06c8acfd3b6e31649a597fef4cdd320f, type: 3}

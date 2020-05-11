@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] int startingHealth = 5;
+    [SerializeField] GameObject deathVFX;
     int currentHealth;
     // Start is called before the first frame update
     void Start()
@@ -23,8 +25,26 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            DeathHandler();
         }
     }
 
+    private void DeathHandler()
+    {
+        TriggerDeathVFX();
+        var attacker = gameObject.GetComponent<Attacker>();
+        if (attacker != null)
+        {
+            attacker.PlayDeathAnimationAndDestory();
+        }
+    }
+
+    private void TriggerDeathVFX()
+    {
+        if (deathVFX != null)
+        {
+            var deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
+            Destroy(deathVFXObject, 1f);
+        }
+    }
 }
