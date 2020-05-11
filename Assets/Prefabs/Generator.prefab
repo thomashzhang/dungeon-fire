@@ -231,4 +231,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crystalCost: 10
   createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
-  generateAmount: 10
+  generateAmount: 1

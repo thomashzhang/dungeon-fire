@@ -8,11 +8,14 @@ public class CrystalDisplay : MonoBehaviour
 {
     [SerializeField] int crystals = 100;
     TextMeshProUGUI crystalsCountText;
+
+    private Object crystalsLock;
     // Start is called before the first frame update
     void Start()
     {
         crystalsCountText = GetComponent<TextMeshProUGUI>();
         UpdateCrystalsDisplay();
+        crystalsLock = new Object();
     }
 
     private void UpdateCrystalsDisplay()
@@ -21,25 +24,32 @@ public class CrystalDisplay : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Return true when crystals can be and is spent
+    /// Returns false when crystals can't be spent and isn't taken away
     /// </summary>
     /// <param name="count"></param>
-    /// <returns>true if the spend was successful, false otherwise</returns>
+    /// <returns></returns>
     public bool SpendCrystals(int count)
     {
-        if (crystals >= count)
+        lock (crystalsLock)
         {
-            crystals -= count;
-            UpdateCrystalsDisplay();
-            return true;
+            if (crystals >= count)
+            {
+                crystals -= count;
+                UpdateCrystalsDisplay();
+                return true;
+            }
+            return false;
         }
-        return false;
     }
 
     public void AddCrystals(int count)
     {
-        crystals += count;
-        UpdateCrystalsDisplay();
+        lock (crystalsLock)
+        {
+            crystals += count;
+            UpdateCrystalsDisplay();
+        }
     }
 
     // Update is called once per frame
