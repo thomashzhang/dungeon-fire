@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : Defender
+public class Generator : Defender
 {
-    [SerializeField] GameObject projectile, projectilePosition;
+    [SerializeField] int generateAmount = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +17,8 @@ public class Shooter : Defender
         
     }
 
-    public void Fire()
+    public void GenerateCrystals(int amount)
     {
-        Instantiate(projectile, projectilePosition.transform.position, projectilePosition.transform.rotation);
+        FindObjectOfType<CrystalDisplay>().AddCrystals(generateAmount);
     }
 }

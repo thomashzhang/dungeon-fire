@@ -28,7 +28,10 @@ public class PlaceDefender : MonoBehaviour
     {
         if (defender != null)
         {
-            var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
+            if (defender.CreateDefenderCrystalCost())
+            {
+                var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
+            }
         }
     }
 }

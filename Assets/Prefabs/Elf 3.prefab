@@ -40,8 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1596644667}
   - component: {fileID: 1596644669}
-  - component: {fileID: 1596644668}
-  - component: {fileID: 1596644666}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -115,41 +113,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1596644668
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596644665}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 507962386ae655a49990e442330f7b68, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1596644666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596644665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66e23ee9fb7b75b40a2d4a0274e0a1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8385889567835752087, guid: ba164c4b55269824f9a03d3bfdb5859b,
-    type: 3}
-  projectilePosition: {fileID: 289394871}
-  createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
 --- !u!1 &7884555745861943000
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +122,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712720887848338864}
-  - component: {fileID: 8069454035958206391}
+  - component: {fileID: 821901306}
+  - component: {fileID: 821901305}
   m_Layer: 0
   m_Name: Elf 3
   m_TagString: Untagged
@@ -182,7 +146,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8069454035958206391
+--- !u!114 &821901306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +155,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 7884555745861943000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46c132d10635230488821f2be76a39fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 66e23ee9fb7b75b40a2d4a0274e0a1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   crystalCost: 10
+  createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  projectile: {fileID: 8385889567835752087, guid: ba164c4b55269824f9a03d3bfdb5859b,
+    type: 3}
+  projectilePosition: {fileID: 289394871}
+--- !u!95 &821901305
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884555745861943000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 507962386ae655a49990e442330f7b68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

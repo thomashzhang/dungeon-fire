@@ -122,8 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2916929e6c46152419e259543cc21708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 8069454035958206391, guid: e259f3a685527d746ac08e4e2f1d1c6f,
-    type: 3}
+  defenderPrefab: {fileID: 821901306, guid: e259f3a685527d746ac08e4e2f1d1c6f, type: 3}
 --- !u!1 &4695734579651923754
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2916929e6c46152419e259543cc21708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 5128321692008391643, guid: 3dda474a4cfd9b94faa0c4387c845ef6,
+  defenderPrefab: {fileID: 2811593826197797410, guid: 3dda474a4cfd9b94faa0c4387c845ef6,
     type: 3}
 --- !u!1 &4695734581079471136
 GameObject:
