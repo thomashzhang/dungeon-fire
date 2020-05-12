@@ -20,7 +20,7 @@ public class Shooter : Defender
         var attackerSpawners = FindObjectsOfType<AttackerSpawner>();
         foreach (var attackerSpawner in attackerSpawners)
         {
-            var close = Math.Abs(attackerSpawner.transform.position.y - attackerSpawner.transform.position.y) <= Mathf.Epsilon;
+            var close = Math.Abs(attackerSpawner.transform.position.y - transform.position.y) <= Mathf.Epsilon;
             if (close)
             {
                 laneAttackerSpawner = attackerSpawner;
