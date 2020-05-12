@@ -21,7 +21,10 @@ public class Shooter : Defender
         foreach (var attackerSpawner in attackerSpawners)
         {
             var close = Math.Abs(attackerSpawner.transform.position.y - attackerSpawner.transform.position.y) <= Mathf.Epsilon;
-            laneAttackerSpawner = attackerSpawner;
+            if (close)
+            {
+                laneAttackerSpawner = attackerSpawner;
+            }
             break;
             // This assumes only one attacker spawner per lane
         }
