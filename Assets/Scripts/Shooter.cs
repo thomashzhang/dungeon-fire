@@ -24,8 +24,8 @@ public class Shooter : Defender
             if (close)
             {
                 laneAttackerSpawner = attackerSpawner;
+                break;
             }
-            break;
             // This assumes only one attacker spawner per lane
         }
     }
