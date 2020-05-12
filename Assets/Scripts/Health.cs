@@ -32,11 +32,7 @@ public class Health : MonoBehaviour
     private void DeathHandler()
     {
         TriggerDeathVFX();
-        var attacker = gameObject.GetComponent<Attacker>();
-        if (attacker != null)
-        {
-            attacker.PlayDeathAnimationAndDestory();
-        }
+        Destroy(gameObject);
     }
 
     private void TriggerDeathVFX()

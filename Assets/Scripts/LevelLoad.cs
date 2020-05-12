@@ -29,6 +29,12 @@ public class LevelLoad : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void LoadLoseScreen()
+    {
+        SceneManager.LoadScene("Start Screen");
+        // TODO: Make this the lose screen
+    }
+
     // Update is called once per frame
     void Update()
     {

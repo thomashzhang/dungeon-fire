@@ -6,7 +6,6 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [Range(0f, 10f)] [SerializeField] float currentSpeed = 1f;
-    [SerializeField] Animation deathAnitmation;
 
     private Defender currentTarget;
     private Animator animator;
@@ -20,6 +19,15 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
+        UpdateAnimationState();
+    }
+
+    private void UpdateAnimationState()
+    {
+        if (!currentTarget)
+        {
+            animator.SetBool("isAttacking", false);
+        }
     }
 
     public void SetMovementSpeed(float speed)
@@ -27,22 +35,21 @@ public class Attacker : MonoBehaviour
         currentSpeed = speed;
     }
 
-    internal void PlayDeathAnimationAndDestory()
-    {
-        if (deathAnitmation != null)
-        {
-            deathAnitmation.Play();
-            Destroy(gameObject, 3f);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     public void Attack(Defender defender)
     {
         animator.SetBool("isAttacking", true);
         currentTarget = defender;
+    }
+    public void AttackCurrentTarget(int damage)
+    {
+        if (currentTarget == null)
+        {
+            return;
+        }
+        var health = currentTarget.GetComponent<Health>();
+        if (health != null)
+        {
+            health.DealDamage(damage);
+        }
     }
 }
