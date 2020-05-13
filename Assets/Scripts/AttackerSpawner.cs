@@ -35,6 +35,11 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    public void SetSpawn(bool spawn)
+    {
+        this.spawn = spawn;
+    }
+
     // Update is called once per frame
     void Update()
     {

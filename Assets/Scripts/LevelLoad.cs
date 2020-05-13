@@ -35,6 +35,11 @@ public class LevelLoad : MonoBehaviour
         // TODO: Make this the lose screen
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     // Update is called once per frame
     void Update()
     {

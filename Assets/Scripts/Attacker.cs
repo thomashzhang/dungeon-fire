@@ -10,9 +10,18 @@ public class Attacker : MonoBehaviour
     private Defender currentTarget;
     private Animator animator;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
     }
 
     // Update is called once per frame
