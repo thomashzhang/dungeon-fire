@@ -29,9 +29,15 @@ public class LevelLoad : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public void LoadLoseScreen()
+    public void LoadStartScreen()
     {
         SceneManager.LoadScene("Start Screen");
+        // TODO: Make this the lose screen
+    }
+
+    public void ReloadCurrentScren()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         // TODO: Make this the lose screen
     }
 
