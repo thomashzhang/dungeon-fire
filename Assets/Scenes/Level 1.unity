@@ -284,7 +284,17 @@ PrefabInstance:
     - target: {fileID: 231823300119334492, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.0000076
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300119334492, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300119334492, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.57472
       objectReference: {fileID: 0}
     - target: {fileID: 231823300119334493, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
@@ -294,7 +304,17 @@ PrefabInstance:
     - target: {fileID: 231823300478642980, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 476
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300478642980, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300478642980, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.57472
       objectReference: {fileID: 0}
     - target: {fileID: 231823300478642981, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
@@ -419,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 231823300760031175, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 142
+      value: 233
       objectReference: {fileID: 0}
     - target: {fileID: 231823300760031175, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
@@ -429,32 +449,52 @@ PrefabInstance:
     - target: {fileID: 231823300760031175, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 206.55371
+      value: 183.38065
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300760031177, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 514
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823300760031177, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 231823301042124502, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 231823301042124502, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000047684
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 231823301042124502, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1552.318
+      value: 1033.63
       objectReference: {fileID: 0}
     - target: {fileID: 231823301042124502, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500.18292
+      value: 671.93
       objectReference: {fileID: 0}
     - target: {fileID: 231823301488478148, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -477
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823301488478148, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -227
+      objectReference: {fileID: 0}
+    - target: {fileID: 231823301488478148, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.57472
       objectReference: {fileID: 0}
     - target: {fileID: 231823301488478149, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
