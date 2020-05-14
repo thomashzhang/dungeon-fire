@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
+    [SerializeField] GameObject winCanvas;
     private GameTimer timer;
     private bool levelTimerFinished;
     private int attackerCount;
@@ -15,6 +16,7 @@ public class LevelController : MonoBehaviour
         timer = FindObjectOfType<GameTimer>();
         attackerCount = 0;
         levelTimerFinished = false;
+        winCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,7 +44,7 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleGameWin()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Start Screen");
+        winCanvas.SetActive(true);
     }
 
     public void LevelTimerFinished()
