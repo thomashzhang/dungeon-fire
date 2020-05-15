@@ -8,11 +8,14 @@ public class LivesDisplay : MonoBehaviour
 {
     [SerializeField] int lives = 99;
     TextMeshProUGUI livesCountText;
+
+    private bool gameLost;
     // Start is called before the first frame update
     void Start()
     {
         livesCountText = GetComponent<TextMeshProUGUI>();
         UpdateLivesDisplay();
+        gameLost = false;
     }
 
     private void UpdateLivesDisplay()
@@ -22,12 +25,17 @@ public class LivesDisplay : MonoBehaviour
 
     public void AttackerReachedBase(int livesValue = 1)
     {
-        lives -= livesValue;
-        UpdateLivesDisplay();
-
-        if (lives <= 0)
+        if (!gameLost)
         {
-            FindObjectOfType<LevelLoad>().LoadStartScreen();
+            lives -= livesValue;
+            UpdateLivesDisplay();
+
+            if (lives <= 0)
+            {
+                gameLost = true;
+                FindObjectOfType<LevelController>().LevelLose();
+                lives = 0;
+            }
         }
     }
 

@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float speed = 1f;
+    [SerializeField] float speed = 2f;
     [SerializeField] int damage = 1;
     [SerializeField] Sprite collisionSprite;
+    [SerializeField] Sprite inFlightSprite;
+
+    private bool firstFrame;
     // Start is called before the first frame update
     void Start()
     {
-        
+        firstFrame = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (firstFrame)
+        {
+            firstFrame = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = inFlightSprite;
+        }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         transform.Rotate(100f * Time.deltaTime, 0f, 0f);
     }

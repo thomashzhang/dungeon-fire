@@ -7,7 +7,7 @@ public class Defender : MonoBehaviour
     [SerializeField] int crystalCost = 10;
     [SerializeField] GameObject createVFX;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         if (createVFX != null)
         {

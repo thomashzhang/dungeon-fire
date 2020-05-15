@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject winCanvas;
+    [SerializeField] GameObject loseCanvas;
     private GameTimer timer;
     private bool levelTimerFinished;
     private int attackerCount;
@@ -17,6 +18,7 @@ public class LevelController : MonoBehaviour
         attackerCount = 0;
         levelTimerFinished = false;
         winCanvas.SetActive(false);
+        loseCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,14 +39,25 @@ public class LevelController : MonoBehaviour
         attackerCount -= 1;
         if (levelTimerFinished && attackerCount <= 0)
         {
-            StartCoroutine(HandleGameWin());
+            StartCoroutine(HandleLevelWin());
         }
     }
 
-    private IEnumerator HandleGameWin()
+    private IEnumerator HandleLevelWin()
     {
         yield return new WaitForSeconds(2);
         winCanvas.SetActive(true);
+    }
+
+    public void LevelLose()
+    {
+        StartCoroutine(HandleLevelLose());
+    }
+
+    private IEnumerator HandleLevelLose()
+    {
+        yield return new WaitForSeconds(2);
+        loseCanvas.SetActive(true);
     }
 
     public void LevelTimerFinished()

@@ -97,9 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c6fe884f625f54a8e070fbe7bee53d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   damage: 1
   collisionSprite: {fileID: -5832559894743436793, guid: f6764995ed9519143aedf0f648f3ed0d,
+    type: 3}
+  inFlightSprite: {fileID: -5771481405171048723, guid: f6764995ed9519143aedf0f648f3ed0d,
     type: 3}
 --- !u!58 &1382161184507556103
 CircleCollider2D:
