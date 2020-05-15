@@ -27,4 +27,9 @@ public class Defender : MonoBehaviour
     {
         return FindObjectOfType<CrystalDisplay>().SpendCrystals(crystalCost);
     }
+
+    public int GetCrystalCost()
+    {
+        return crystalCost;
+    }
 }
