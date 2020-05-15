@@ -4,6 +4,23 @@ using UnityEngine;
 public class PlaceDefender : MonoBehaviour
 {
     private Defender defender;
+    private GameObject defenderParent;
+    const string DEFENDER_PARENT_NAME = "Defenders";
+
+    private void Start()
+    {
+        CreateDefenderParent();
+    }
+
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (defenderParent == null)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
+    }
+
     private void OnMouseDown()
     {
         CreateDefender(GetSquareClicked());
@@ -31,6 +48,7 @@ public class PlaceDefender : MonoBehaviour
             if (defender.CreateDefenderCrystalCost())
             {
                 var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
+                spwanedDefender.transform.parent = defenderParent.transform;
             }
         }
     }

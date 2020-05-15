@@ -8,12 +8,24 @@ public class Shooter : Defender
     [SerializeField] GameObject projectile, projectilePosition;
     private AttackerSpawner laneAttackerSpawner;
     private Animator animator;
+    private GameObject projectileParent;
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         SetLane();
         animator = GetComponent<Animator>();
+        CreateProjectileParent();
+    }
+
+    private void CreateProjectileParent()
+    {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (projectileParent == null)
+        {
+            projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
+        }
     }
 
     private void SetLane()
@@ -55,6 +67,7 @@ public class Shooter : Defender
 
     public void Fire()
     {
-        Instantiate(projectile, projectilePosition.transform.position, projectilePosition.transform.rotation);
+        var createdProjectile = Instantiate(projectile, projectilePosition.transform.position, projectilePosition.transform.rotation);
+        createdProjectile.transform.parent = projectileParent.transform;
     }
 }
