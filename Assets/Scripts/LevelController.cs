@@ -11,6 +11,7 @@ public class LevelController : MonoBehaviour
     private GameTimer timer;
     private bool levelTimerFinished;
     private int attackerCount;
+    private bool winInitiated;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class LevelController : MonoBehaviour
         levelTimerFinished = false;
         winCanvas.SetActive(false);
         loseCanvas.SetActive(false);
+        winInitiated = false;
     }
 
     // Update is called once per frame
@@ -28,6 +30,11 @@ public class LevelController : MonoBehaviour
         //{
         //    SceneManager.LoadScene("Start Screen");
         //}        
+        if (!winInitiated && levelTimerFinished && attackerCount <= 0)
+        {
+            StartCoroutine(HandleLevelWin());
+            winInitiated = true;
+        }
     }
 
     public void AttackerSpawned()
@@ -37,15 +44,11 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled()
     {
         attackerCount -= 1;
-        if (levelTimerFinished && attackerCount <= 0)
-        {
-            StartCoroutine(HandleLevelWin());
-        }
     }
 
     private IEnumerator HandleLevelWin()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         winCanvas.SetActive(true);
     }
 
@@ -56,7 +59,7 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator HandleLevelLose()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         loseCanvas.SetActive(true);
     }
 

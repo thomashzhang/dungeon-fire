@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = inFlightSprite;
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-        transform.Rotate(100f * Time.deltaTime, 0f, 0f);
+        //transform.Rotate(100f * Time.deltaTime, 0f, 0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

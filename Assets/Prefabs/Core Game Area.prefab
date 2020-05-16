@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7191253353429896841}
   - component: {fileID: 7191253353429896840}
   - component: {fileID: 7191253353429896951}
-  - component: {fileID: 7624069012090787483}
   m_Layer: 0
   m_Name: Core Game Area
   m_TagString: Untagged
@@ -71,16 +70,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 5}
   m_EdgeRadius: 0
---- !u!114 &7624069012090787483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7191253353429896950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59fc46449558b5a4592c3d9fd705d853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToWait: 3
