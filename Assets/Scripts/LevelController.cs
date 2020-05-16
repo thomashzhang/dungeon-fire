@@ -8,28 +8,33 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject winCanvas;
     [SerializeField] GameObject loseCanvas;
+    [SerializeField] int gameStartDelaySeconds = 5;
     private GameTimer timer;
     private bool levelTimerFinished;
     private int attackerCount;
     private bool winInitiated;
+    private bool gameStartInitiated;
     // Start is called before the first frame update
     void Start()
     {
+        StopSpawners();
         timer = FindObjectOfType<GameTimer>();
         attackerCount = 0;
         levelTimerFinished = false;
         winCanvas.SetActive(false);
         loseCanvas.SetActive(false);
         winInitiated = false;
+        gameStartInitiated = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (timer.TimerOver() && FindObjectsOfType<Attacker>().Count() <= 0)
-        //{
-        //    SceneManager.LoadScene("Start Screen");
-        //}        
+        if (!gameStartInitiated && Time.timeSinceLevelLoad >= gameStartDelaySeconds)
+        {
+            StartSpwaners();
+            gameStartInitiated = true;
+        }
         if (!winInitiated && levelTimerFinished && attackerCount <= 0)
         {
             StartCoroutine(HandleLevelWin());
@@ -49,6 +54,7 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleLevelWin()
     {
         yield return new WaitForSeconds(1);
+        FindObjectOfType<MusicManager>().StopMusic();
         winCanvas.SetActive(true);
     }
 
@@ -60,6 +66,7 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleLevelLose()
     {
         yield return new WaitForSeconds(1);
+        FindObjectOfType<MusicManager>().StopMusic();
         loseCanvas.SetActive(true);
     }
 
@@ -69,6 +76,15 @@ public class LevelController : MonoBehaviour
         StopSpawners();
     }
 
+    private void StartSpwaners()
+    {
+        var spawners = FindObjectsOfType<AttackerSpawner>();
+        foreach (var spawner in spawners)
+        {
+            spawner.SetSpawn(true);
+        }
+    }
+
     private void StopSpawners()
     {
         var spawners = FindObjectsOfType<AttackerSpawner>();
@@ -76,5 +92,14 @@ public class LevelController : MonoBehaviour
         {
             spawner.SetSpawn(false);
         }
+    }
+
+    public int GetGameStartDelaySeconds()
+    {
+        return gameStartDelaySeconds;
+    }
+    public bool GetGameStartInitiated()
+    {
+        return gameStartInitiated;
     }
 }

@@ -6,10 +6,12 @@ public class PlaceDefender : MonoBehaviour
     private Defender defender;
     private GameObject defenderParent;
     const string DEFENDER_PARENT_NAME = "Defenders";
+    private AudioSource audioSource;
 
     private void Start()
     {
         CreateDefenderParent();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void CreateDefenderParent()
@@ -23,6 +25,7 @@ public class PlaceDefender : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         CreateDefender(GetSquareClicked());
     }
 
@@ -47,6 +50,7 @@ public class PlaceDefender : MonoBehaviour
         {
             if (defender.CreateDefenderCrystalCost())
             {
+                audioSource.Play(0);
                 var spwanedDefender = Instantiate(defender, position, Quaternion.identity);
                 spwanedDefender.transform.parent = defenderParent.transform;
             }

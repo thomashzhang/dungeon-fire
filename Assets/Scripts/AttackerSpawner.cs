@@ -19,7 +19,7 @@ public class AttackerSpawner : MonoBehaviour
 
     private IEnumerator SpawnAttackers()
     {
-        while (spawn)
+        while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
             if (spawn)
