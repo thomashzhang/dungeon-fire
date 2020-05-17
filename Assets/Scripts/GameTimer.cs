@@ -25,14 +25,14 @@ public class GameTimer : MonoBehaviour
         slider.value = 0;
         while (!levelController.GetGameStartInitiated())
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
             slider.value = Time.timeSinceLevelLoad <= levelController.GetGameStartDelaySeconds() ? Time.timeSinceLevelLoad / levelController.GetGameStartDelaySeconds() : 1;
         }
         slider.direction = Slider.Direction.RightToLeft;
         slider.value = 0;
         while (!triggeredLevelFinished)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
             slider.value = Time.timeSinceLevelLoad - levelController.GetGameStartDelaySeconds() <= levelTime ? (Time.timeSinceLevelLoad - levelController.GetGameStartDelaySeconds()) / levelTime : 1;
             // TODO: Move out of update
             if (TimerOver())
@@ -50,6 +50,6 @@ public class GameTimer : MonoBehaviour
 
     public bool TimerOver()
     {
-        return Time.timeSinceLevelLoad >= levelTime;
+        return Time.timeSinceLevelLoad - levelController.GetGameStartDelaySeconds() >= levelTime;
     }
 }
