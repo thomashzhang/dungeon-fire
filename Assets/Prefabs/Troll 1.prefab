@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 5
   deathVFX: {fileID: 194062, guid: 06c8acfd3b6e31649a597fef4cdd320f, type: 3}
+  deathSFX: {fileID: 925887059267597102, guid: 5ebe3f5478abcf14782a63c1df608f88, type: 3}
 --- !u!114 &2030464930361757932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,4 +212,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 1
-  deathAnitmation: {fileID: 0}

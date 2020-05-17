@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float speed = 2f;
+    [SerializeField] float speed = 3f;
     [SerializeField] int damage = 1;
     [SerializeField] Sprite collisionSprite;
     [SerializeField] Sprite inFlightSprite;

@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int startingHealth = 5;
     [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathSFX;
     int currentHealth;
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,18 @@ public class Health : MonoBehaviour
 
     private void DeathHandler()
     {
+        TriggerDeathSFX();
         TriggerDeathVFX();
         Destroy(gameObject);
+    }
+
+    private void TriggerDeathSFX()
+    {
+        if (deathSFX != null)
+        {
+            var deathSFXObject = Instantiate(deathSFX, transform.position, transform.rotation);
+            Destroy(deathSFXObject, 1f);
+        }
     }
 
     private void TriggerDeathVFX()
