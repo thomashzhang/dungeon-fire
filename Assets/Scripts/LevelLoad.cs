@@ -8,9 +8,13 @@ public class LevelLoad : MonoBehaviour
 {
     [SerializeField] int timeToWait = 3;
     int currentSceneIndex;
+    private Color loadToColor;
+    private float loadDelay;
     // Start is called before the first frame update
     void Start()
     {
+        loadToColor = Color.black;
+        loadDelay = 5f;
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
@@ -21,24 +25,32 @@ public class LevelLoad : MonoBehaviour
     private IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
-        LoadNextScene();
+        LoadStartScreen();
     }
 
-    public void LoadNextScene()
+    //public void LoadNextScene()
+    //{
+    //    Initiate.Fade(currentSceneIndex + 1, loadToColor, loadDelay);
+    //}
+
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        Initiate.Fade(sceneName, loadToColor, loadDelay);
     }
 
     public void LoadStartScreen()
     {
-        SceneManager.LoadScene("Start Screen");
-        // TODO: Make this the lose screen
+        Initiate.Fade("Start Screen", loadToColor, loadDelay);
+    }
+
+    public void LoadLevelSelectScreen()
+    {
+        Initiate.Fade("Level Select Screen", loadToColor, loadDelay);
     }
 
     public void ReloadCurrentScren()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // TODO: Make this the lose screen
     }
 
     public void QuitGame()
