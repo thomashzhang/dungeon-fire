@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     [Tooltip("Level timer in seconds")] [SerializeField] float levelTime = 60;
-    bool triggeredLevelFinished;
     private Slider slider;
     private LevelController levelController;
+    public bool TriggeredTimerEnd { get; set; }
     // Start is called before the first frame update
     void Start()
     {
-        triggeredLevelFinished = false;
+        TriggeredTimerEnd = false;
         slider = FindObjectOfType<Slider>();
         levelController = FindObjectOfType<LevelController>();
         StartCoroutine(UpdateTimer());
@@ -30,14 +30,14 @@ public class GameTimer : MonoBehaviour
         }
         slider.direction = Slider.Direction.RightToLeft;
         slider.value = 0;
-        while (!triggeredLevelFinished)
+        while (!TriggeredTimerEnd && !levelController.TriggeredLevelWin && !levelController.TriggeredLevelLose)
         {
             yield return new WaitForSeconds(0.05f);
             slider.value = Time.timeSinceLevelLoad - levelController.GetGameStartDelaySeconds() <= levelTime ? (Time.timeSinceLevelLoad - levelController.GetGameStartDelaySeconds()) / levelTime : 1;
             // TODO: Move out of update
             if (TimerOver())
             {
-                triggeredLevelFinished = true;
+                TriggeredTimerEnd = true;
                 levelController.LevelTimerFinished();
             }
         }

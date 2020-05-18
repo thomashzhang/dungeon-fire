@@ -9,12 +9,12 @@ public class LevelLoad : MonoBehaviour
     [SerializeField] int timeToWait = 3;
     int currentSceneIndex;
     private Color loadToColor;
-    private float loadDelay;
+    private float loadDelayMultiplier;
     // Start is called before the first frame update
     void Start()
     {
         loadToColor = Color.black;
-        loadDelay = 5f;
+        loadDelayMultiplier = 10f;
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
@@ -35,17 +35,17 @@ public class LevelLoad : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        Initiate.Fade(sceneName, loadToColor, loadDelay);
+        Initiate.Fade(sceneName, loadToColor, loadDelayMultiplier);
     }
 
     public void LoadStartScreen()
     {
-        Initiate.Fade("Start Screen", loadToColor, loadDelay);
+        Initiate.Fade("Start Screen", loadToColor, loadDelayMultiplier);
     }
 
     public void LoadLevelSelectScreen()
     {
-        Initiate.Fade("Level Select Screen", loadToColor, loadDelay);
+        Initiate.Fade("Level Select Screen", loadToColor, loadDelayMultiplier);
     }
 
     public void ReloadCurrentScren()

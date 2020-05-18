@@ -14,6 +14,8 @@ public class LevelController : MonoBehaviour
     private int attackerCount;
     private bool winInitiated;
     private bool gameStartInitiated;
+    public bool TriggeredLevelWin { get; set; }
+    public bool TriggeredLevelLose { get; set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class LevelController : MonoBehaviour
         loseCanvas.SetActive(false);
         winInitiated = false;
         gameStartInitiated = false;
+        TriggeredLevelLose = false;
+        TriggeredLevelWin = false;
     }
 
     // Update is called once per frame
@@ -53,6 +57,7 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator HandleLevelWin()
     {
+        TriggeredLevelWin = true;
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
         winCanvas.SetActive(true);
@@ -65,6 +70,8 @@ public class LevelController : MonoBehaviour
 
     private IEnumerator HandleLevelLose()
     {
+        TriggeredLevelLose = true;
+        StopSpawners();
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
         loseCanvas.SetActive(true);
