@@ -44,8 +44,9 @@ public class Shooter : Defender
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         if (IsAttackerInLane())
         {
             animator.SetBool("isAttacking", true);
