@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int startingHealth = 5;
+    [SerializeField] protected int startingHealth = 5;
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject deathSFX;
-    int currentHealth;
+    protected int currentHealth;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         currentHealth = startingHealth;
     }
@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
 
     }
 
-    public void DealDamage(int damage)
+    public virtual void DealDamage(int damage)
     {
         currentHealth -= damage;
         if (currentHealth <= 0)
