@@ -57,7 +57,7 @@ public class Shooter : Mercenary
         }
     }
 
-    private bool IsAttackerInLane()
+    protected virtual bool IsAttackerInLane()
     {
         if (laneAttackerSpawner.transform.childCount > 0)
         {
