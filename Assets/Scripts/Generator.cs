@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Generator : Defender
+public class Generator : Mercenary
 {
     [SerializeField] int generateAmount = 10;
     public void GenerateCrystals(int amount)

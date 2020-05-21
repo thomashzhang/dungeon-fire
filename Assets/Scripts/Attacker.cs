@@ -7,7 +7,7 @@ public class Attacker : MonoBehaviour
 {
     [Range(0f, 10f)] [SerializeField] float currentSpeed = 1f;
 
-    private Defender currentTarget;
+    private Mercenary currentTarget;
     private Animator animator;
     // Start is called before the first frame update
     private void Awake()
@@ -44,7 +44,7 @@ public class Attacker : MonoBehaviour
         currentSpeed = speed;
     }
 
-    public void Attack(Defender defender)
+    public void Attack(Mercenary defender)
     {
         animator.SetBool("isAttacking", true);
         currentTarget = defender;

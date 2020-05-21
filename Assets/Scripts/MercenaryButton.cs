@@ -5,9 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DefenderButton : MonoBehaviour
+public class MercenaryButton : MonoBehaviour
 {
-    [SerializeField] Defender defenderPrefab;
+    [SerializeField] Mercenary defenderPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,13 +36,13 @@ public class DefenderButton : MonoBehaviour
 
     private void OnMouseDown()
     {
-        var buttons = FindObjectsOfType<DefenderButton>();
+        var buttons = FindObjectsOfType<MercenaryButton>();
         foreach (var button in buttons)
         {
             if (button == this)
             {
                 GetComponent<SpriteRenderer>().color = Color.white;
-                FindObjectOfType<PlaceDefender>().SetSelectedDefender(defenderPrefab);
+                FindObjectOfType<PlaceMercenary>().SetSelectedDefender(defenderPrefab);
             }
             else
             {

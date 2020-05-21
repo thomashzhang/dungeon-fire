@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : Defender
+public class Shooter : Mercenary
 {
     [SerializeField] GameObject projectile, projectilePosition;
     private AttackerSpawner laneAttackerSpawner;

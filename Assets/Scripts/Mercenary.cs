@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Defender : MonoBehaviour
+public class Mercenary : MonoBehaviour
 {
     [SerializeField] int crystalCost = 10;
     [SerializeField] GameObject createVFX;

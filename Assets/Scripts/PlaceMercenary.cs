@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-public class PlaceDefender : MonoBehaviour
+public class PlaceMercenary : MonoBehaviour
 {
-    private Defender defender;
+    private Mercenary defender;
     private GameObject defenderParent;
     const string DEFENDER_PARENT_NAME = "Defenders";
     private AudioSource audioSource;
@@ -29,7 +29,7 @@ public class PlaceDefender : MonoBehaviour
         CreateDefender(GetSquareClicked());
     }
 
-    public void SetSelectedDefender(Defender defender)
+    public void SetSelectedDefender(Mercenary defender)
     {
         this.defender = defender;
     }
