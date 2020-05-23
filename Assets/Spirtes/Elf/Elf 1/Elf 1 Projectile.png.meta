@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6002fd9162e00a84aa4c51c106dbf2dd
+guid: 979c697178772284ba404d125a4fcb2b
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -153,10 +153,10 @@ TextureImporter:
       name: Elf 1 Projectile_8
       rect:
         serializedVersion: 2
-        x: 1307
-        y: 2591
+        x: 1313
+        y: 2607
         width: 247
-        height: 52
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +174,10 @@ TextureImporter:
       name: Elf 1 Projectile_10
       rect:
         serializedVersion: 2
-        x: 1498
-        y: 1576
+        x: 1493
+        y: 1580
         width: 247
-        height: 51
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,10 @@ TextureImporter:
       name: Elf 1 Projectile_12
       rect:
         serializedVersion: 2
-        x: 1591
-        y: 516
-        width: 242
-        height: 49
+        x: 1586
+        y: 523
+        width: 247
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

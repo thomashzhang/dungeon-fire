@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4316591671308393128}
   - component: {fileID: 4316591671308393129}
-  - component: {fileID: 4316591671308393110}
   - component: {fileID: 4316591671308393130}
-  - component: {fileID: 4316591671308393131}
+  - component: {fileID: 2003531751342604108}
+  - component: {fileID: 918318691}
   m_Layer: 0
   m_Name: Elf 1 Projectile
   m_TagString: Untagged
@@ -73,36 +73,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 9198982625448439841, guid: 6002fd9162e00a84aa4c51c106dbf2dd,
+  m_Sprite: {fileID: 9198982625448439841, guid: 979c697178772284ba404d125a4fcb2b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8745099, g: 0.8745099, b: 0.8745099, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.41166666, y: 0.08667612}
+  m_Size: {x: 0.41166666, y: 0.068340786}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4316591671308393110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4316591671308393111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34c6fe884f625f54a8e070fbe7bee53d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  damage: 1
-  collisionSprite: {fileID: 846490484131892746, guid: 6002fd9162e00a84aa4c51c106dbf2dd,
-    type: 3}
-  inFlightSprite: {fileID: 3361836896507637118, guid: 6002fd9162e00a84aa4c51c106dbf2dd,
-    type: 3}
 --- !u!50 &4316591671308393130
 Rigidbody2D:
   serializedVersion: 4
@@ -124,7 +106,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4316591671308393131
+--- !u!114 &2003531751342604108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4316591671308393111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e985ddba2603e884fa8b5ab1c18a7616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  damage: 1
+  collisionSprite: {fileID: 846490484131892746, guid: 979c697178772284ba404d125a4fcb2b,
+    type: 3}
+  inFlightSprite: {fileID: 3361836896507637118, guid: 979c697178772284ba404d125a4fcb2b,
+    type: 3}
+--- !u!61 &918318691
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,12 +141,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41166666, y: 0.08667612}
-    newSize: {x: 0.41166666, y: 0.08667612}
+    oldSize: {x: 0.41166666, y: 0.068340786}
+    newSize: {x: 0.41166666, y: 0.068340786}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.41166666, y: 0.08667612}
+  m_Size: {x: 0.41166666, y: 0.08500927}
   m_EdgeRadius: 0

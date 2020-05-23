@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float speed = 4f;
+    [SerializeField] protected float speed = 4f;
     [SerializeField] int damage = 1;
-    [SerializeField] Sprite collisionSprite;
-    [SerializeField] Sprite inFlightSprite;
+    [SerializeField] protected Sprite collisionSprite;
+    [SerializeField] protected Sprite inFlightSprite;
 
-    private bool firstFrame;
+    protected bool firstFrame;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         firstFrame = true;
     }
@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (firstFrame)
         {
@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour
         //transform.Rotate(100f * Time.deltaTime, 0f, 0f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Attacker>() != null)
         {
