@@ -20,14 +20,14 @@ public class Stars : MonoBehaviour
             Debug.LogWarning("Star 2, Star 3 or LivesDisplay is null, can't properly display stars at end level");
             return;
         }
-        if (livesDisplay.LivesLostRatio() < 1)
-        {
-            star2.GetComponent<Image>().color = Color.white;
-            star3.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
-        }
-        else if (livesDisplay.LivesLostRatio() < 0.5)
+        if (livesDisplay.LivesLostRatio() < 0.5)
         {
             star2.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
+            star3.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
+        }
+        else if (livesDisplay.LivesLostRatio() < 1)
+        {
+            star2.GetComponent<Image>().color = Color.white;
             star3.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
         }
     }
