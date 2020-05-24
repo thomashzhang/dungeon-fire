@@ -6,13 +6,15 @@ using UnityEngine;
 
 public class LivesDisplay : MonoBehaviour
 {
-    [SerializeField] int lives = 99;
+    [SerializeField] int initialLives = 99;
+    private int remainingLives;
     TextMeshProUGUI livesCountText;
 
     private bool gameLost;
     // Start is called before the first frame update
     void Start()
     {
+        remainingLives = initialLives;
         livesCountText = GetComponent<TextMeshProUGUI>();
         UpdateLivesDisplay();
         gameLost = false;
@@ -20,21 +22,21 @@ public class LivesDisplay : MonoBehaviour
 
     private void UpdateLivesDisplay()
     {
-        livesCountText.text = lives.ToString();
+        livesCountText.text = remainingLives.ToString();
     }
 
     public void AttackerReachedBase(int livesValue = 1)
     {
         if (!gameLost)
         {
-            lives -= livesValue;
+            remainingLives -= livesValue;
             UpdateLivesDisplay();
 
-            if (lives <= 0)
+            if (remainingLives <= 0)
             {
                 gameLost = true;
                 FindObjectOfType<LevelController>().LevelLose();
-                lives = 0;
+                remainingLives = 0;
             }
         }
     }
