@@ -10,26 +10,26 @@ public class Rubies : MonoBehaviour
     void Start()
     {
         moneyText = GetComponent<TextMeshProUGUI>();
-        UpdateMoneyDisplay();
+        UpdateRubyDisplay();
     }
 
-    private void UpdateMoneyDisplay()
+    private void UpdateRubyDisplay()
     {
         moneyText.text = PlayerPrefsManager.Rubies.ToString();
     }
 
-    public void SubtractMoney(int amount)
+    public void SubtractRubies(int amount)
     {
         if (amount <= PlayerPrefsManager.Rubies)
         {
             PlayerPrefsManager.Rubies -= amount;
         }
-        UpdateMoneyDisplay();
+        UpdateRubyDisplay();
     }
 
-    public void AddMoney(int amount)
+    public void AddRubies(int amount)
     {
         PlayerPrefsManager.Rubies += amount;
-        UpdateMoneyDisplay();
+        UpdateRubyDisplay();
     }
 }

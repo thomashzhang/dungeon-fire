@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -58,9 +59,23 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleLevelWin()
     {
         TriggeredLevelWin = true;
+        UpdateRubiesEarned();
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
         winCanvas.SetActive(true);
+    }
+
+    private void UpdateRubiesEarned()
+    {
+        var rubiesEarned = FindObjectOfType<RubiesEarned>();
+        if (rubiesEarned != null)
+        {
+            rubiesEarned.TriggerLevelWinAddRubies();
+        }
+        else
+        {
+            Debug.LogWarning("Can't find rubies object and not earning rubies for this level");
+        }
     }
 
     public void LevelLose()

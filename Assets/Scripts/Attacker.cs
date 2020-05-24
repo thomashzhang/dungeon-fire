@@ -6,6 +6,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [Range(0f, 10f)] [SerializeField] float currentSpeed = 1f;
+    [Range(0, 1000)] [SerializeField] int killRubies = 1;
 
     private Mercenary currentTarget;
     private Animator animator;
@@ -22,6 +23,7 @@ public class Attacker : MonoBehaviour
     private void OnDestroy()
     {
         FindObjectOfType<LevelController>()?.AttackerKilled();
+        FindObjectOfType<RubiesEarned>()?.AddRubies(killRubies);
     }
 
     // Update is called once per frame
