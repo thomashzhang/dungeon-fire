@@ -3,9 +3,9 @@
 [System.Serializable]
 public class PlayerPrefsManager : MonoBehaviour
 {
-    public static int Money
+    public static int Rubies
     {
-        get { return PlayerPrefs.GetInt(nameof(Money), 0); }
-        set { PlayerPrefs.SetInt(nameof(Money), value); }
+        get { return PlayerPrefs.GetInt(nameof(Rubies), 0); }
+        set { PlayerPrefs.SetInt(nameof(Rubies), value); }
     }
 }

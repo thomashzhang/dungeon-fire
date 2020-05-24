@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Money : MonoBehaviour
+public class Rubies : MonoBehaviour
 {
     private TextMeshProUGUI moneyText;
     // Start is called before the first frame update
@@ -15,21 +15,21 @@ public class Money : MonoBehaviour
 
     private void UpdateMoneyDisplay()
     {
-        moneyText.text = $"${PlayerPrefsManager.Money}";
+        moneyText.text = PlayerPrefsManager.Rubies.ToString();
     }
 
     public void SubtractMoney(int amount)
     {
-        if (amount <= PlayerPrefsManager.Money)
+        if (amount <= PlayerPrefsManager.Rubies)
         {
-            PlayerPrefsManager.Money -= amount;
+            PlayerPrefsManager.Rubies -= amount;
         }
         UpdateMoneyDisplay();
     }
 
     public void AddMoney(int amount)
     {
-        PlayerPrefsManager.Money += amount;
+        PlayerPrefsManager.Rubies += amount;
         UpdateMoneyDisplay();
     }
 }
