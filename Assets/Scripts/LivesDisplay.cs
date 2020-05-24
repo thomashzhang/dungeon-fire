@@ -41,6 +41,11 @@ public class LivesDisplay : MonoBehaviour
         }
     }
 
+    public float LivesLostRatio()
+    {
+        return remainingLives / (float) initialLives;
+    }
+
     // Update is called once per frame
     void Update()
     {

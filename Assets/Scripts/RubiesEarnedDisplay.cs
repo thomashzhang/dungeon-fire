@@ -7,7 +7,8 @@ public class RubiesEarnedDisplay : MonoBehaviour
 {
     private TextMeshProUGUI rubiesText;
     // Start is called before the first frame update
-    void Start()
+
+    private void OnEnable()
     {
         rubiesText = GetComponent<TextMeshProUGUI>();
         UpdateRubyDisplay();
