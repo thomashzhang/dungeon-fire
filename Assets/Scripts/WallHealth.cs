@@ -11,16 +11,6 @@ public class WallHealth : Health
 
     protected override void Start()
     {
-        // Enable or disabled walls based on whether the user bought them
-        var walls = PlayerPrefsManager.Walls;
-        if (walls <= 0)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            startingHealth = walls;
-        }
         base.Start();
         childSpriteRendererReference = GetComponentInChildren<SpriteRenderer>();
     }

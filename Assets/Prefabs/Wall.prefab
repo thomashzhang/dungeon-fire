@@ -91,9 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3273930939345946455}
   - component: {fileID: 3273930939345946454}
-  - component: {fileID: 3273930939345946453}
   - component: {fileID: 3273930939345946448}
   - component: {fileID: 3273930939345946449}
+  - component: {fileID: 336217259039049236}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -142,23 +142,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3273930939345946453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3273930939345946452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c79d1b0efafd6f4e9bd4afe98d106de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 3
-  deathVFX: {fileID: 959912858007270564, guid: e420f9b6fbf263c43a612a8289d1b66c, type: 3}
-  deathSFX: {fileID: 0}
-  damageSprite1: {fileID: 21300000, guid: bb7ccc74b5b3f2c43aadd8d8b2211385, type: 3}
-  damageSprite2: {fileID: 21300000, guid: 500b65c439b86764bb0b7cf2bf1a4e3d, type: 3}
 --- !u!114 &3273930939345946448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,3 +175,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &336217259039049236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273930939345946452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f158e8012455e946951e9b774a83cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathVFX: {fileID: 959912858007270564, guid: e420f9b6fbf263c43a612a8289d1b66c, type: 3}
+  deathSFX: {fileID: 0}
+  damageSprite1: {fileID: 21300000, guid: bb7ccc74b5b3f2c43aadd8d8b2211385, type: 3}
+  damageSprite2: {fileID: 21300000, guid: 500b65c439b86764bb0b7cf2bf1a4e3d, type: 3}
