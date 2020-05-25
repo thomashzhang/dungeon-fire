@@ -18,13 +18,20 @@ public class Rubies : MonoBehaviour
         moneyText.text = PlayerPrefsManager.Rubies.ToString();
     }
 
-    public void SubtractRubies(int amount)
+    /// <summary>
+    /// True when rubies are successfully subtracted, false when not
+    /// </summary>
+    /// <param name="amount"></param>
+    /// <returns></returns>
+    public bool SubtractRubies(int amount)
     {
         if (amount <= PlayerPrefsManager.Rubies)
         {
             PlayerPrefsManager.Rubies -= amount;
+            UpdateRubyDisplay();
+            return true;
         }
-        UpdateRubyDisplay();
+        return false;
     }
 
     public void AddRubies(int amount)
