@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Troll Walk
+  m_Name: Ork 1 Attack
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,34 +20,34 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6688502295150247158, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -2379871950318004438, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.083333336
-      value: {fileID: -5322597041107218882, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -5341178217501799371, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 8230817885480565717, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -5120146553636946520, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.25
-      value: {fileID: 508275655694845608, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -7252651793839907772, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.33333334
-      value: {fileID: -7188863391045164101, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -6232193122448897378, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.41666666
-      value: {fileID: 1569091507427287573, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: 7732470837409733740, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.5
-      value: {fileID: 3437265936855824603, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: 5043388732548214729, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.5833333
-      value: {fileID: -4371516152516695054, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: 5987527902861113299, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.6666667
-      value: {fileID: 1106279052461542660, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -689178449189477876, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     - time: 0.75
-      value: {fileID: -4056264852655089477, guid: b4ad99e427d9c7f4c998659f64aff70f,
+      value: {fileID: -3183160352398228617, guid: f6d17e042887cbd4da2c52c00caa9b51,
         type: 3}
     attribute: m_Sprite
     path: Body
@@ -68,16 +68,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6688502295150247158, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: -5322597041107218882, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: 8230817885480565717, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: 508275655694845608, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: -7188863391045164101, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: 1569091507427287573, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: 3437265936855824603, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: -4371516152516695054, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: 1106279052461542660, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
-    - {fileID: -4056264852655089477, guid: b4ad99e427d9c7f4c998659f64aff70f, type: 3}
+    - {fileID: -2379871950318004438, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -5341178217501799371, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -5120146553636946520, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -7252651793839907772, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -6232193122448897378, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: 7732470837409733740, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: 5043388732548214729, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: 5987527902861113299, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -689178449189477876, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
+    - {fileID: -3183160352398228617, guid: f6d17e042887cbd4da2c52c00caa9b51, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -107,6 +107,13 @@ AnimationClip:
     functionName: SetMovementSpeed
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 1
+    floatParameter: 0
     intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: AttackCurrentTarget
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
     messageOptions: 0

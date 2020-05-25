@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -59,6 +59,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2030464930361757932, guid: 4c77ab61b3e6d434d94a9ddf427d34cf,
         type: 3}
+    - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
+        type: 3}
+      propertyPath: attackerSpawnList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3725242502152827346, guid: a76a30655d98f0b4382ecf896e87c396,
+        type: 3}
     - target: {fileID: 7596189386316057691, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_Name
@@ -67,7 +73,7 @@ PrefabInstance:
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -137,7 +143,7 @@ PrefabInstance:
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -151,6 +157,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2030464930361757932, guid: 4c77ab61b3e6d434d94a9ddf427d34cf,
         type: 3}
+    - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
+        type: 3}
+      propertyPath: attackerSpawnList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3725242502152827346, guid: a76a30655d98f0b4382ecf896e87c396,
+        type: 3}
     - target: {fileID: 7596189386316057691, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_Name
@@ -159,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -229,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -243,6 +255,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2030464930361757932, guid: 4c77ab61b3e6d434d94a9ddf427d34cf,
         type: 3}
+    - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
+        type: 3}
+      propertyPath: attackerSpawnList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3725242502152827346, guid: a76a30655d98f0b4382ecf896e87c396,
+        type: 3}
     - target: {fileID: 7596189386316057691, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_Name
@@ -251,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -321,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -335,6 +353,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2030464930361757932, guid: 4c77ab61b3e6d434d94a9ddf427d34cf,
         type: 3}
+    - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
+        type: 3}
+      propertyPath: attackerSpawnList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3725242502152827346, guid: a76a30655d98f0b4382ecf896e87c396,
+        type: 3}
     - target: {fileID: 7596189386316057691, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_Name
@@ -343,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -413,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
@@ -427,6 +451,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2030464930361757932, guid: 4c77ab61b3e6d434d94a9ddf427d34cf,
         type: 3}
+    - target: {fileID: 7577361928102505741, guid: 850a6e97cfe9ec943807e8cc83fe6957,
+        type: 3}
+      propertyPath: attackerSpawnList.Array.data[1]
+      value: 
+      objectReference: {fileID: 3725242502152827346, guid: a76a30655d98f0b4382ecf896e87c396,
+        type: 3}
     - target: {fileID: 7596189386316057691, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_Name
@@ -435,7 +465,7 @@ PrefabInstance:
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 7596189386316057692, guid: 850a6e97cfe9ec943807e8cc83fe6957,
         type: 3}
