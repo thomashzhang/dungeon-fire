@@ -1,6 +1,7 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RubiesUpgradeCost : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class RubiesUpgradeCost : MonoBehaviour
     private TextMeshProUGUI priceText;
     private TextMeshProUGUI currentStatsText;
     private TextMeshProUGUI nextStatsText;
+    private TextMeshProUGUI upgradeButtonText;
     private Rubies rubiesDisplay;
     private const string appendLevelText = "UpgradeLevel";
     void Start()
@@ -16,6 +18,7 @@ public class RubiesUpgradeCost : MonoBehaviour
         priceText = transform.Find("Item Cost").GetComponent<TextMeshProUGUI>();
         currentStatsText = transform.Find("Current Stats").GetComponent<TextMeshProUGUI>();
         nextStatsText = transform.Find("Next Stats").GetComponent<TextMeshProUGUI>();
+        upgradeButtonText = transform.Find("Upgrade Button (LeanButton)/Cap/Text").GetComponent<TextMeshProUGUI>();
         rubiesDisplay = FindObjectOfType<Rubies>();
 
         UpdateTexts();
@@ -27,6 +30,20 @@ public class RubiesUpgradeCost : MonoBehaviour
         SetPriceText(CalculateNextLevelCost());
         SetCurrentStatsText(itemValue);
         SetNextStatsText(itemValue + statIncreaseAmount);
+        UpdateButtonText(itemValue);
+    }
+
+    private void UpdateButtonText(int itemLevel)
+    {
+        if (itemLevel <= 0)
+        {
+            // Make the button a buy button
+            upgradeButtonText.text = "Buy";
+        }
+        else
+        {
+            upgradeButtonText.text = "Upgrade";
+        }
     }
 
     private void SetNextStatsText(int nextLevel)
@@ -91,6 +108,22 @@ public class RubiesUpgradeCost : MonoBehaviour
                 PlayerPrefsManager.LivesUpgradeLevel += upgradeAmount;
             }
             return PlayerPrefsManager.LivesUpgradeLevel;
+        }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.Walls))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.Walls += upgradeAmount;
+            }
+            return PlayerPrefsManager.Walls;
+        }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.WallsUpgradeLevel))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.WallsUpgradeLevel += upgradeAmount;
+            }
+            return PlayerPrefsManager.WallsUpgradeLevel;
         }
         Debug.LogError("No variable name match for upgrade");
         throw new Exception("No variable name match for upgrade");

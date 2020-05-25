@@ -21,4 +21,16 @@ public class PlayerPrefsManager : MonoBehaviour
         get { return PlayerPrefs.GetInt(nameof(LivesUpgradeLevel), 19); }
         set { PlayerPrefs.SetInt(nameof(LivesUpgradeLevel), value); }
     }
+
+    public static int Walls
+    {
+        get { return PlayerPrefs.GetInt(nameof(Walls), 0); }
+        set { PlayerPrefs.SetInt(nameof(Walls), value); }
+    }
+
+    public static int WallsUpgradeLevel
+    {
+        get { return PlayerPrefs.GetInt(nameof(WallsUpgradeLevel), 19); }
+        set { PlayerPrefs.SetInt(nameof(WallsUpgradeLevel), value); }
+    }
 }
