@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class LivesDisplay : MonoBehaviour
 {
-    [SerializeField] int initialLives = 99;
+    private int initialLives;
     private int remainingLives;
     TextMeshProUGUI livesCountText;
 
@@ -14,6 +14,7 @@ public class LivesDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initialLives = PlayerPrefsManager.Lives;
         remainingLives = initialLives;
         livesCountText = GetComponent<TextMeshProUGUI>();
         UpdateLivesDisplay();
