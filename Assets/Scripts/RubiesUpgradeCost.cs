@@ -7,6 +7,7 @@ public class RubiesUpgradeCost : MonoBehaviour
 {
     [SerializeField] string upgradeProperty;
     [SerializeField] int statIncreaseAmount = 1;
+    [SerializeField] int statIncreaseCap = int.MaxValue;
     private TextMeshProUGUI priceText;
     private TextMeshProUGUI currentStatsText;
     private TextMeshProUGUI nextStatsText;
@@ -26,11 +27,11 @@ public class RubiesUpgradeCost : MonoBehaviour
 
     private void UpdateTexts()
     {
-        var itemValue = StringToIntVariable(upgradeProperty);
-        SetPriceText(CalculateNextLevelCost());
-        SetCurrentStatsText(itemValue);
-        SetNextStatsText(itemValue + statIncreaseAmount);
-        UpdateButtonText(itemValue);
+        var itemLevel = StringToIntVariable(upgradeProperty);
+        SetPriceText(itemLevel, CalculateNextLevelCost());
+        SetCurrentStatsText(itemLevel);
+        SetNextStatsText(itemLevel + statIncreaseAmount);
+        UpdateButtonText(itemLevel);
     }
 
     private void UpdateButtonText(int itemLevel)
@@ -40,6 +41,10 @@ public class RubiesUpgradeCost : MonoBehaviour
             // Make the button a buy button
             upgradeButtonText.text = "Buy";
         }
+        else if (itemLevel >= statIncreaseCap)
+        {
+            upgradeButtonText.text = "Max";
+        }
         else
         {
             upgradeButtonText.text = "Upgrade";
@@ -48,7 +53,14 @@ public class RubiesUpgradeCost : MonoBehaviour
 
     private void SetNextStatsText(int nextLevel)
     {
-        nextStatsText.text = $"Next: {nextLevel}";
+        if (nextLevel > statIncreaseCap)
+        {
+            nextStatsText.text = $"Max";
+        }
+        else
+        {
+            nextStatsText.text = $"Next: {nextLevel}";
+        }
     }
 
     private void SetCurrentStatsText(int currentLevel)
@@ -56,9 +68,16 @@ public class RubiesUpgradeCost : MonoBehaviour
         currentStatsText.text = $"Cur: {currentLevel}";
     }
 
-    private void SetPriceText(int price)
+    private void SetPriceText(int currentLevel, int price)
     {
-        priceText.text = $"Price: {price}";
+        if (currentLevel >= statIncreaseCap)
+        {
+            priceText.text = "Price: Max";
+        }
+        else
+        {
+            priceText.text = $"Price: {price}";
+        }
     }
 
     public int CalculateNextLevelCost()
@@ -69,7 +88,8 @@ public class RubiesUpgradeCost : MonoBehaviour
 
     public void UpgradeItemLevel()
     {
-        if (rubiesDisplay.SubtractRubies(CalculateNextLevelCost()))
+        var currentLevel = StringToIntVariable(upgradeProperty);
+        if ((currentLevel + statIncreaseAmount) <= statIncreaseCap  && rubiesDisplay.SubtractRubies(CalculateNextLevelCost()))
         {
             StringToIntVariable(upgradeProperty, statIncreaseAmount);
             StringToIntVariable(UpgradePropertyLevelString(), 1);
@@ -124,6 +144,22 @@ public class RubiesUpgradeCost : MonoBehaviour
                 PlayerPrefsManager.WallsUpgradeLevel += upgradeAmount;
             }
             return PlayerPrefsManager.WallsUpgradeLevel;
+        }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.Defenders))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.Defenders += upgradeAmount;
+            }
+            return PlayerPrefsManager.Defenders;
+        }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.DefendersUpgradeLevel))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.DefendersUpgradeLevel += upgradeAmount;
+            }
+            return PlayerPrefsManager.DefendersUpgradeLevel;
         }
         Debug.LogError("No variable name match for upgrade");
         throw new Exception("No variable name match for upgrade");

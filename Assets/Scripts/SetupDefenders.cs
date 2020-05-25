@@ -14,7 +14,7 @@ public class SetupDefenders : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numberOfDefenders = 5;
+        numberOfDefenders = PlayerPrefsManager.Defenders;
         yDistanceBetweenDefenders = (maxYPosition - minYPosition) / (numberOfDefenders + 1);
         SpawnLinedUpDefenders();
     }
