@@ -8,6 +8,7 @@ public class AttackerSpawner : MonoBehaviour
 {
     [SerializeField] float minSpawnDelay = 2f;
     [SerializeField] float maxSpawnDelay = 5f;
+    [SerializeField] float initialDelay = 0f;
     [SerializeField] Attacker[] attackerSpawnList;
 
     bool spawn = true;
@@ -19,6 +20,11 @@ public class AttackerSpawner : MonoBehaviour
 
     private IEnumerator SpawnAttackers()
     {
+        if (initialDelay > 0)
+        {
+            int levelDelay = FindObjectOfType<LevelController>().GetGameStartDelaySeconds();
+            yield return new WaitForSeconds(levelDelay + initialDelay);
+        }
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));

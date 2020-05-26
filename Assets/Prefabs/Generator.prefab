@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6aac2b1b0fb2345aeb623859e296e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalCost: 10
+  crystalCost: 20
   createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
   generateAmount: 1
 --- !u!61 &4375116753940406946
