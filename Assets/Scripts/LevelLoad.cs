@@ -28,19 +28,22 @@ public class LevelLoad : MonoBehaviour
         LoadStartScreen();
     }
 
-    //public void LoadNextScene()
-    //{
-    //    Initiate.Fade(currentSceneIndex + 1, loadToColor, loadDelay);
-    //}
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        // Initiate.Fade(currentSceneIndex + 1, loadToColor, loadDelay);
+    }
 
     public void LoadScene(string sceneName)
     {
-        Initiate.Fade(sceneName, loadToColor, loadDelayMultiplier);
+        SceneManager.LoadScene(sceneName);
+        // Initiate.Fade(sceneName, loadToColor, loadDelayMultiplier);
     }
 
     public void LoadStartScreen()
     {
-        Initiate.Fade("Start Screen", loadToColor, loadDelayMultiplier);
+        SceneManager.LoadScene("Start Screen");
+        // Initiate.Fade("Start Screen", loadToColor, loadDelayMultiplier);
     }
 
     public void LoadLevelSelectScreen()

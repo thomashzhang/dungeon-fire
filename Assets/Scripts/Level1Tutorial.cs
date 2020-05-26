@@ -8,12 +8,6 @@ public class Level1Tutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SetTimeScaleToZero());
-    }
-
-    private IEnumerator SetTimeScaleToZero()
-    {
-        yield return new WaitForSeconds(0.2f);
         Time.timeScale = 0;
     }
 

@@ -1070,6 +1070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Logic
       objectReference: {fileID: 0}
+    - target: {fileID: 6718972303100205408, guid: 02039e3bd8c827a4db95e60d9d524f2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02039e3bd8c827a4db95e60d9d524f2f, type: 3}
 --- !u!222 &2855542368381499782
