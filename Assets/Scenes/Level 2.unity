@@ -1450,6 +1450,11 @@ PrefabInstance:
       propertyPath: gameStartDelaySeconds
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2541137911249043612, guid: 02039e3bd8c827a4db95e60d9d524f2f,
+        type: 3}
+      propertyPath: gameLevel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02039e3bd8c827a4db95e60d9d524f2f, type: 3}
 --- !u!222 &2855542368381499782

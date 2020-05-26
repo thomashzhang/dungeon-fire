@@ -117,7 +117,13 @@ PrefabInstance:
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4854139919590986458}
+      objectReference: {fileID: 6926168983950699194, guid: 988576ad99a2e224ca63b8e3a542894d,
+        type: 3}
+    - target: {fileID: 4577123534032062144, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadCurrentScren
+      objectReference: {fileID: 0}
     - target: {fileID: 4577123534743224708, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -231,18 +237,30 @@ PrefabInstance:
     - target: {fileID: 4577123534743224760, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4577123535043881504, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4854139919590986458}
+      objectReference: {fileID: 6926168983950699194, guid: 988576ad99a2e224ca63b8e3a542894d,
+        type: 3}
+    - target: {fileID: 4577123535043881504, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadStartScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4577123535367655256, guid: a91af3fe0f9b8844492501d73fda5854,
         type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4854139919590986458}
+      objectReference: {fileID: 6926168983950699195, guid: 988576ad99a2e224ca63b8e3a542894d,
+        type: 3}
+    - target: {fileID: 4577123535367655256, guid: a91af3fe0f9b8844492501d73fda5854,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91af3fe0f9b8844492501d73fda5854, type: 3}
 --- !u!1 &2541137910304092290 stripped
