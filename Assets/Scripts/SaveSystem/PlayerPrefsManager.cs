@@ -3,7 +3,6 @@
 [System.Serializable]
 public class PlayerPrefsManager : MonoBehaviour
 {
-    // WARNING, DO NOT RENAME THESE VARIABLES AS THERE ARE STRING REFERENCES
     public static int Rubies
     {
         get { return PlayerPrefs.GetInt(nameof(Rubies), 0); }
@@ -16,6 +15,14 @@ public class PlayerPrefsManager : MonoBehaviour
         set { PlayerPrefs.SetInt(nameof(Lives), value); }
     }
 
+    public static int MaxLevelsUnlocked
+    {
+        get { return PlayerPrefs.GetInt(nameof(MaxLevelsUnlocked), 1); }
+        set { PlayerPrefs.SetInt(nameof(MaxLevelsUnlocked), value); }
+    }
+
+    #region upgrades
+    // WARNING, DO NOT RENAME THESE VARIABLES AS THERE ARE STRING REFERENCES
     public static int LivesUpgradeLevel
     {
         get { return PlayerPrefs.GetInt(nameof(LivesUpgradeLevel), 19); }
@@ -45,4 +52,5 @@ public class PlayerPrefsManager : MonoBehaviour
         get { return PlayerPrefs.GetInt(nameof(DefendersUpgradeLevel), 50); }
         set { PlayerPrefs.SetInt(nameof(DefendersUpgradeLevel), value); }
     }
+    #endregion
 }

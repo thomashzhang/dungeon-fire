@@ -10,6 +10,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] GameObject winCanvas;
     [SerializeField] GameObject loseCanvas;
     [SerializeField] int gameStartDelaySeconds = 5;
+    [SerializeField] int gameLevel = 0;
     private GameTimer timer;
     private bool levelTimerFinished;
     public int AttackerCount { get; set; }
@@ -60,6 +61,14 @@ public class LevelController : MonoBehaviour
     {
         TriggeredLevelWin = true;
         UpdateRubiesEarned();
+        if (gameLevel <= 0)
+        {
+            Debug.LogError("Game Level not set, unable to unlock levels");
+        }
+        else
+        {
+            UnlockLevels();
+        }
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
         winCanvas.SetActive(true);
@@ -90,6 +99,15 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
         loseCanvas.SetActive(true);
+    }
+
+    private void UnlockLevels()
+    {
+        var maxLevelsUnlocked = PlayerPrefsManager.MaxLevelsUnlocked;
+        if (maxLevelsUnlocked < (gameLevel + 1))
+        {
+            PlayerPrefsManager.MaxLevelsUnlocked = gameLevel + 1;
+        }
     }
 
     public void LevelTimerFinished()
