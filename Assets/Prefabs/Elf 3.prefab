@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e23ee9fb7b75b40a2d4a0274e0a1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalCost: 10
+  crystalCost: 20
   createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
   projectile: {fileID: 8385889567835752087, guid: ba164c4b55269824f9a03d3bfdb5859b,
     type: 3}
