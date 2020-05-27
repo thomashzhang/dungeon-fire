@@ -30,7 +30,7 @@ public class LevelLoad : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         // Initiate.Fade(currentSceneIndex + 1, loadToColor, loadDelay);
     }
 

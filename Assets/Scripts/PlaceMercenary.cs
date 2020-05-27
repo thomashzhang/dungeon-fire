@@ -7,7 +7,6 @@ public class PlaceMercenary : MonoBehaviour
     private GameObject defenderParent;
     const string DEFENDER_PARENT_NAME = "Defenders";
     private AudioSource audioSource;
-
     private void Start()
     {
         CreateDefenderParent();
@@ -34,7 +33,7 @@ public class PlaceMercenary : MonoBehaviour
         this.defender = defender;
     }
 
-    private Vector2 GetSquareClicked()
+    public Vector2 GetSquareClicked()
     {
         var clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         var worldPos = Camera.main.ScreenToWorldPoint(clickPos);

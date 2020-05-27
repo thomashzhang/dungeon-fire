@@ -5,16 +5,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MercenaryButton : MonoBehaviour
+public class MercenaryButton : SelectButton
 {
     [SerializeField] Mercenary defenderPrefab;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         UpdateButtonCost();
     }
 
-    private void UpdateButtonCost()
+    protected virtual void UpdateButtonCost()
     {
         var costText = GetComponentInChildren<TextMeshProUGUI>();
         if (costText == null)
@@ -28,26 +28,9 @@ public class MercenaryButton : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnMouseDown()
     {
-        
-    }
-
-    private void OnMouseDown()
-    {
-        var buttons = FindObjectsOfType<MercenaryButton>();
-        foreach (var button in buttons)
-        {
-            if (button == this)
-            {
-                GetComponent<SpriteRenderer>().color = Color.white;
-                FindObjectOfType<PlaceMercenary>().SetSelectedDefender(defenderPrefab);
-            }
-            else
-            {
-                button.GetComponent<SpriteRenderer>().color = new Color32(63, 63, 63, 255);
-            }
-        }
+        base.OnMouseDown();
+        FindObjectOfType<PlaceMercenary>().SetSelectedDefender(defenderPrefab);
     }
 }

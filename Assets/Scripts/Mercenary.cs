@@ -32,4 +32,18 @@ public class Mercenary : MonoBehaviour
     {
         return crystalCost;
     }
+
+    private void OnMouseDown()
+    {
+        var levelController = FindObjectOfType<LevelController>();
+        if (levelController != null && levelController.DeleteMercenaryModeEnabled)
+        {
+            DeleteMercenary();
+        }
+    }
+
+    private void DeleteMercenary()
+    {
+        GetComponent<Health>().DeathHandler();
+    }
 }

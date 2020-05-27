@@ -18,6 +18,8 @@ public class LevelController : MonoBehaviour
     private bool gameStartInitiated;
     public bool TriggeredLevelWin { get; set; }
     public bool TriggeredLevelLose { get; set; }
+
+    public bool DeleteMercenaryModeEnabled { get; set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class LevelController : MonoBehaviour
         gameStartInitiated = false;
         TriggeredLevelLose = false;
         TriggeredLevelWin = false;
+        DeleteMercenaryModeEnabled = false;
     }
 
     // Update is called once per frame

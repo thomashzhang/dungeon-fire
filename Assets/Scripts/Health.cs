@@ -30,7 +30,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    private void DeathHandler()
+    public void DeathHandler()
     {
         TriggerDeathSFX();
         TriggerDeathVFX();
