@@ -12,6 +12,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] int gameStartDelaySeconds = 5;
     [SerializeField] int gameLevel = 0;
     private GameTimer timer;
+    private LivesDisplay lives;
     private bool levelTimerFinished;
     public int AttackerCount { get; set; }
     private bool winInitiated;
@@ -25,6 +26,7 @@ public class LevelController : MonoBehaviour
     {
         StopSpawners();
         timer = FindObjectOfType<GameTimer>();
+        lives = FindObjectOfType<LivesDisplay>();
         AttackerCount = 0;
         levelTimerFinished = false;
         winCanvas.SetActive(false);
@@ -44,7 +46,7 @@ public class LevelController : MonoBehaviour
             StartSpwaners();
             gameStartInitiated = true;
         }
-        if (!winInitiated && levelTimerFinished && AttackerCount <= 0)
+        if (!winInitiated && levelTimerFinished && AttackerCount <= 0 && lives.RemainingLives() > 0)
         {
             StartCoroutine(HandleLevelWin());
             winInitiated = true;

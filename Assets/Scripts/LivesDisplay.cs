@@ -47,9 +47,8 @@ public class LivesDisplay : MonoBehaviour
         return remainingLives / (float) initialLives;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int RemainingLives()
     {
-        
+        return remainingLives;
     }
 }

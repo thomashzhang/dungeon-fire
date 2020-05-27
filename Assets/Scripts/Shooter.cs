@@ -59,7 +59,7 @@ public class Shooter : Mercenary
 
     protected virtual bool IsAttackerInLane()
     {
-        if (laneAttackerSpawner.transform.childCount > 0)
+        if (laneAttackerSpawner != null && laneAttackerSpawner.transform.childCount > 0)
         {
             return true;
         }
