@@ -655,9 +655,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can now hire knights! They cost a little more to hire and can only
-    attack close by enemies, but have high damage and high health. They can be used
-    to block a lot of attackers.
+  m_text: You can now hire knights! They can only attack close enemies, but have
+    high damage and high health. They are much better when paired with wizards, but
+    that all you have for now.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb58eb2428121bf40a4d1e5b7ac3f648, type: 2}
   m_sharedMaterial: {fileID: -7815264568396601565, guid: eb58eb2428121bf40a4d1e5b7ac3f648,
@@ -727,10 +727,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 574139498}
-    characterCount: 179
+    characterCount: 177
     spriteCount: 0
-    spaceCount: 35
-    wordCount: 36
+    spaceCount: 32
+    wordCount: 33
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -1718,7 +1718,7 @@ PrefabInstance:
     - target: {fileID: 487561927247794328, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
       propertyPath: crystals
-      value: 200
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 487561927271674140, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
@@ -2178,6 +2178,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4503313831986441956, guid: 2f9b9442a525679479069c5e89479ae3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4503313833368945422, guid: 2f9b9442a525679479069c5e89479ae3,
         type: 3}
       propertyPath: m_Name
@@ -2324,7 +2329,7 @@ PrefabInstance:
     - target: {fileID: 659995821575039702, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 659995821575039702, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}

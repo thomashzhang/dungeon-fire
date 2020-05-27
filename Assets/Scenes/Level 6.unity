@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
       propertyPath: m_text
-      value: Level 5
+      value: Level 6
       objectReference: {fileID: 0}
     - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
@@ -141,11 +141,6 @@ PrefabInstance:
     - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 487561926356044202, guid: 28a26b942d9a6774da9ed240fa866cd7,
@@ -272,11 +267,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487561927247794328, guid: 28a26b942d9a6774da9ed240fa866cd7,
-        type: 3}
-      propertyPath: crystals
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 487561927271674140, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
@@ -503,12 +493,7 @@ PrefabInstance:
     - target: {fileID: 2541137911249043612, guid: 02039e3bd8c827a4db95e60d9d524f2f,
         type: 3}
       propertyPath: gameLevel
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541137911249043612, guid: 02039e3bd8c827a4db95e60d9d524f2f,
-        type: 3}
-      propertyPath: gameStartDelaySeconds
-      value: 20
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02039e3bd8c827a4db95e60d9d524f2f, type: 3}
@@ -726,10 +711,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 680422874, guid: 2f9b9442a525679479069c5e89479ae3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4503313833368945422, guid: 2f9b9442a525679479069c5e89479ae3,
         type: 3}
       propertyPath: m_Name
@@ -868,31 +849,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 659995819878517188, guid: 1d839c7f76e98f94e9a165b8478cb742,
-        type: 3}
-      propertyPath: initialDelay
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 659995821575039702, guid: 1d839c7f76e98f94e9a165b8478cb742,
-        type: 3}
-      propertyPath: minSpawnDelay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 659995821575039702, guid: 1d839c7f76e98f94e9a165b8478cb742,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 659995821774543294, guid: 1d839c7f76e98f94e9a165b8478cb742,
-        type: 3}
-      propertyPath: initialDelay
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 678884886904536573, guid: 1d839c7f76e98f94e9a165b8478cb742,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6917797536587995476, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: m_Name
