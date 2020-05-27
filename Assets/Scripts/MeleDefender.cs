@@ -6,11 +6,12 @@ using UnityEngine;
 public class MeleDefender : Mercenary
 {
     private Animator animator;
-    private Attacker currentTarget;
+    private Stack<Attacker> currentTarget;
 
     protected override void Start()
     {
         base.Start();
+        currentTarget = new Stack<Attacker>();
         animator = GetComponent<Animator>();
     }
     protected override void Update()
@@ -21,7 +22,7 @@ public class MeleDefender : Mercenary
 
     private void UpdateAnimationState()
     {
-        if (!currentTarget)
+        if (currentTarget.Count == 0)
         {
             animator.SetBool("isAttacking", false);
         }
@@ -30,16 +31,21 @@ public class MeleDefender : Mercenary
     public void Attack(Attacker attacker)
     {
         animator.SetBool("isAttacking", true);
-        currentTarget = attacker;
+        currentTarget.Push(attacker);
     }
 
     public void AttackCurrentTarget(int damage)
     {
-        if (currentTarget == null)
+        // Get rid of targets that have been destoryed
+        while (currentTarget.Count > 0 && currentTarget.Peek() == null)
+        {
+            currentTarget.Pop();
+        }
+        if (currentTarget.Count == 0)
         {
             return;
         }
-        var health = currentTarget.GetComponent<Health>();
+        var health = currentTarget.Peek().GetComponent<Health>();
         if (health != null)
         {
             health.DealDamage(damage);

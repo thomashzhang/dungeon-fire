@@ -8,5 +8,6 @@ public class DeleteMercenary : SelectButton
     {
         base.OnMouseDown();
         FindObjectOfType<LevelController>().DeleteMercenaryModeEnabled = true;
+        FindObjectOfType<PlaceMercenary>().SetSelectedDefender(null);
     }
 }

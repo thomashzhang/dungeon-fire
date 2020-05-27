@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04008eef07ccbb84d8ca508446c60bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 15
   deathVFX: {fileID: 194062, guid: 06c8acfd3b6e31649a597fef4cdd320f, type: 3}
   deathSFX: {fileID: 0}
 --- !u!61 &84198296452082427
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3daacb3321ee242afc8cf9eb3749ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalCost: 25
+  crystalCost: 40
   createVFX: {fileID: 0}
 --- !u!1 &84198298196100791
 GameObject:

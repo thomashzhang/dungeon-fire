@@ -529,6 +529,21 @@ PrefabInstance:
       propertyPath: levelTime
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
+        type: 3}
+      propertyPath: m_text
+      value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 487561926266344045, guid: 28a26b942d9a6774da9ed240fa866cd7,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 487561926356044202, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
       propertyPath: m_LocalPosition.x
