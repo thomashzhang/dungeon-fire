@@ -12,6 +12,7 @@ public class Stars : MonoBehaviour
 
     private void OnEnable()
     {
+        var levelController = FindObjectOfType<LevelController>();
         star2 = GameObject.Find("Star 2");
         star3 = GameObject.Find("Star 3");
         livesDisplay = FindObjectOfType<LivesDisplay>();
@@ -24,11 +25,17 @@ public class Stars : MonoBehaviour
         {
             star2.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
             star3.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
+            PlayerPrefsManager.SaveStarsForLevel(levelController.GetGameLevel(), 1);
         }
         else if (livesDisplay.LivesLostRatio() < 1)
         {
             star2.GetComponent<Image>().color = Color.white;
             star3.GetComponent<Image>().color = new Color32(63, 63, 63, 200);
+            PlayerPrefsManager.SaveStarsForLevel(levelController.GetGameLevel(), 2);
+        }
+        else
+        {
+            PlayerPrefsManager.SaveStarsForLevel(levelController.GetGameLevel(), 3);
         }
     }
 

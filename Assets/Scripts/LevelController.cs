@@ -54,6 +54,10 @@ public class LevelController : MonoBehaviour
         }
     }
 
+    public int GetGameLevel()
+    {
+        return gameLevel;
+    }
     public void AttackerSpawned()
     {
         AttackerCount += 1;

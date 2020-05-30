@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using SaveSystem;
+using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 [System.Serializable]
 public class PlayerPrefsManager : MonoBehaviour
@@ -19,6 +22,39 @@ public class PlayerPrefsManager : MonoBehaviour
     {
         get { return PlayerPrefs.GetInt(nameof(MaxLevelsUnlocked), 1); }
         set { PlayerPrefs.SetInt(nameof(MaxLevelsUnlocked), value); }
+    }
+
+    public static void SaveStarsForLevel(int level, int stars)
+    {
+        // Perform validation
+        if (level <= 0 || stars < 0 || stars > 3)
+        {
+            throw new Exception("invalid data when trying to save stars for level");
+        }
+        var currentStarList = Stars;
+        // Save level to index - 1 position, ex, level 1 = index 0, level 5 = index 4
+        while (currentStarList.Count < level)
+        {
+            currentStarList.Add(0);
+        }
+        currentStarList[level - 1] = stars;
+        Stars = currentStarList;
+    }
+
+    public static int GetStarsForLevel(int level)
+    {
+        // Handle the case we're looking for stars, but haven't completed the level yet, this results in 0 stars
+        if (Stars.Count < level)
+        {
+            return 0;
+        }
+        return Stars[level - 1];
+    }
+
+    private static List<int> Stars
+    {
+        get { return EasySave.Load(nameof(Stars), new List<int>()); }
+        set { EasySave.Save(nameof(Stars), value); }
     }
 
     #region upgrades
