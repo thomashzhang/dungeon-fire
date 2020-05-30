@@ -32,7 +32,7 @@ public class LevelPanel : MonoBehaviour
 
     private void MoveLevelTextToMakeRoomForStars(GameObject levelText)
     {
-        levelText.transform.position = new Vector3(levelText.transform.position.x, 160, levelText.transform.position.z);
+        levelText.transform.position = new Vector3(levelText.transform.position.x, 200, levelText.transform.position.z);
     }
 
     private void UpdateStarColorBasedOnStarsCompleted(GameObject star1, GameObject star2, GameObject star3, int level)
