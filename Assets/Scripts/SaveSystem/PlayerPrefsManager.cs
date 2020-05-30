@@ -49,7 +49,7 @@ public class PlayerPrefsManager : MonoBehaviour
 
     public static int DefendersUpgradeLevel
     {
-        get { return PlayerPrefs.GetInt(nameof(DefendersUpgradeLevel), 50); }
+        get { return PlayerPrefs.GetInt(nameof(DefendersUpgradeLevel), 40); }
         set { PlayerPrefs.SetInt(nameof(DefendersUpgradeLevel), value); }
     }
     #endregion
