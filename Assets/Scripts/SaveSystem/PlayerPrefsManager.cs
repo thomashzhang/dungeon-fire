@@ -52,5 +52,17 @@ public class PlayerPrefsManager : MonoBehaviour
         get { return PlayerPrefs.GetInt(nameof(DefendersUpgradeLevel), 40); }
         set { PlayerPrefs.SetInt(nameof(DefendersUpgradeLevel), value); }
     }
+
+    public static int Prep
+    {
+        get { return PlayerPrefs.GetInt(nameof(Prep), 0); }
+        set { PlayerPrefs.SetInt(nameof(Prep), value); }
+    }
+
+    public static int PrepUpgradeLevel
+    {
+        get { return PlayerPrefs.GetInt(nameof(PrepUpgradeLevel), 22); }
+        set { PlayerPrefs.SetInt(nameof(PrepUpgradeLevel), value); }
+    }
     #endregion
 }

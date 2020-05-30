@@ -161,6 +161,22 @@ public class RubiesUpgradeCost : MonoBehaviour
             }
             return PlayerPrefsManager.DefendersUpgradeLevel;
         }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.Prep))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.Prep += upgradeAmount;
+            }
+            return PlayerPrefsManager.Prep;
+        }
+        else if (stringPlayerPref == nameof(PlayerPrefsManager.PrepUpgradeLevel))
+        {
+            if (upgradeAmount > 0)
+            {
+                PlayerPrefsManager.PrepUpgradeLevel += upgradeAmount;
+            }
+            return PlayerPrefsManager.PrepUpgradeLevel;
+        }
         Debug.LogError("No variable name match for upgrade");
         throw new Exception("No variable name match for upgrade");
     }

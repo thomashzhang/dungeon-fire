@@ -25,6 +25,7 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         StopSpawners();
+        gameStartDelaySeconds += PlayerPrefsManager.Prep;
         timer = FindObjectOfType<GameTimer>();
         lives = FindObjectOfType<LivesDisplay>();
         AttackerCount = 0;
