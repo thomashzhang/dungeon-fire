@@ -5,7 +5,7 @@ public class PlayerPrefsManager : MonoBehaviour
 {
     public static int Rubies
     {
-        get { return PlayerPrefs.GetInt(nameof(Rubies), 0); }
+        get { return PlayerPrefs.GetInt(nameof(Rubies), 10000); }
         set { PlayerPrefs.SetInt(nameof(Rubies), value); }
     }
 

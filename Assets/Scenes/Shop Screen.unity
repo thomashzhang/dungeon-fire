@@ -1670,6 +1670,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &531776984 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5974946691050391055, guid: 053136ffcc9bd454fbfa20072daa5dd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2052058569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &570255095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4037,11 +4043,11 @@ PrefabInstance:
     - target: {fileID: 46463283, guid: 8725632568610574c87dadea4935a9f1, type: 3}
       propertyPath: Data.Target
       value: 
-      objectReference: {fileID: 807547958}
+      objectReference: {fileID: 531776984}
     - target: {fileID: 1225694813, guid: 8725632568610574c87dadea4935a9f1, type: 3}
       propertyPath: Data.Target
       value: 
-      objectReference: {fileID: 807547958}
+      objectReference: {fileID: 531776984}
     - target: {fileID: 180401535584627089, guid: 8725632568610574c87dadea4935a9f1,
         type: 3}
       propertyPath: m_textInfo.characterCount

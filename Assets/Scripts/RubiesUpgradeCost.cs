@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lean.Gui;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class RubiesUpgradeCost : MonoBehaviour
     private TextMeshProUGUI currentStatsText;
     private TextMeshProUGUI nextStatsText;
     private TextMeshProUGUI upgradeButtonText;
+    private LeanButton upgradeButton;
     private Rubies rubiesDisplay;
     private const string appendLevelText = "UpgradeLevel";
     void Start()
@@ -19,6 +21,7 @@ public class RubiesUpgradeCost : MonoBehaviour
         priceText = transform.Find("Item Cost").GetComponent<TextMeshProUGUI>();
         currentStatsText = transform.Find("Current Stats").GetComponent<TextMeshProUGUI>();
         nextStatsText = transform.Find("Next Stats").GetComponent<TextMeshProUGUI>();
+        upgradeButton = transform.Find("Upgrade Button (LeanButton)").GetComponent<LeanButton>();
         upgradeButtonText = transform.Find("Upgrade Button (LeanButton)/Cap/Text").GetComponent<TextMeshProUGUI>();
         rubiesDisplay = FindObjectOfType<Rubies>();
 
@@ -44,6 +47,9 @@ public class RubiesUpgradeCost : MonoBehaviour
         else if (itemLevel >= statIncreaseCap)
         {
             upgradeButtonText.text = "Max";
+            // TODO: There's a bug where the color doesn't change immediately, but only after reloading the scene
+            upgradeButton.transform.Find("Cap").GetComponent<Image>().color = new Color32(63, 63, 63, 200);
+            upgradeButton.interactable = false;
         }
         else
         {
