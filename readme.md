@@ -12,11 +12,6 @@ It's very simple, there's no roadmap, just good coding and open source license  
 
 This will be on the Google Play and Apple app store soon, but in the meantime, you can download an APK from the "releases" tab.
 
-## How to play
-
-Instructions are mostly in game, but here are a few things to note
-- When upgrading, you can tap the icon if the item you are upgrading to show a description
-
 ## License
 
 Completely open source (MIT), see [LICENSE file](LICENSE) for more information  
