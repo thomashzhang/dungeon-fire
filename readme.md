@@ -20,22 +20,22 @@ This will be on the Google Play and Apple app store soon, but in the meantime, y
 ## Screenshots
 
 Start screen
-![Image](assets/screenshot/snip1.png)
+![Image](Assets/screenshot/snip1.png)
 
 Level 3 win screen, few upgrades
-![Image](assets/screenshot/snip2.png)
+![Image](Assets/screenshot/snip2.png)
 
 Level select screen
-![Image](assets/screenshot/snip3.png)
+![Image](Assets/screenshot/snip3.png)
 
 Upgrades screen
-![Image](assets/screenshot/snip4.png)
+![Image](Assets/screenshot/snip4.png)
 
 Level 10 screen with max castle defenders upgrade
-![Image](assets/screenshot/snip6.png)
+![Image](Assets/screenshot/snip6.png)
 
 Splash screen
-![Image](assets/screenshot/snip7.png)
+![Image](Assets/screenshot/snip7.png)
 
 ## License
 
