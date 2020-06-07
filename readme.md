@@ -10,7 +10,7 @@ It's very simple, there's no roadmap, just good coding and open source license  
 
 ## Installing the game
 
-This will be on the Google Play and Apple app store soon, but in the meantime, you can download an APK from the "releases" tab.
+Install the game on any Android device from [Google Play](https://play.google.com/store/apps/details?id=com.ThomasZhang.DungeonFire) and the app will be on the Apple App Store soon. You may also download an APK from the "releases" tab.
 
 ## License
 
