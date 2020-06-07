@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RubiesEarned : MonoBehaviour
 {
+    [SerializeField] float rubiesMultiplier = 1f;
     private int rubiesObtainedThisLevel;
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,9 @@ public class RubiesEarned : MonoBehaviour
         rubiesObtainedThisLevel += amount;
     }
 
-    public void TriggerLevelWinAddRubies()
+    public void TriggerLevelEndAddRubiesToPlayerPrefs()
     {
-        PlayerPrefsManager.Rubies += rubiesObtainedThisLevel;
+        PlayerPrefsManager.Rubies += Mathf.RoundToInt(rubiesObtainedThisLevel * rubiesMultiplier);
     }
 
     public int RubiesObtained()

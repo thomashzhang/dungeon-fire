@@ -89,7 +89,7 @@ public class LevelController : MonoBehaviour
         var rubiesEarned = FindObjectOfType<RubiesEarned>();
         if (rubiesEarned != null)
         {
-            rubiesEarned.TriggerLevelWinAddRubies();
+            rubiesEarned.TriggerLevelEndAddRubiesToPlayerPrefs();
         }
         else
         {
@@ -105,6 +105,7 @@ public class LevelController : MonoBehaviour
     private IEnumerator HandleLevelLose()
     {
         TriggeredLevelLose = true;
+        UpdateRubiesEarned();
         StopSpawners();
         yield return new WaitForSeconds(1);
         FindObjectOfType<MusicManager>().StopMusic();
