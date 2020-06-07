@@ -37,8 +37,12 @@ public class PlayerPrefsManager : MonoBehaviour
         {
             currentStarList.Add(0);
         }
-        currentStarList[level - 1] = stars;
-        Stars = currentStarList;
+        // Only update stars if the new stars count is greater than the previous counts (ex. we don't want to downgrade from 3 stars to 2 stars)
+        if (currentStarList[level - 1] < stars)
+        {
+            currentStarList[level - 1] = stars;
+            Stars = currentStarList;
+        }
     }
 
     public static int GetStarsForLevel(int level)
