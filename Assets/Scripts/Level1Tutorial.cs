@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Level1Tutorial : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
         Time.timeScale = 0;
     }

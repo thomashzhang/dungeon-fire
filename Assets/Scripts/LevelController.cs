@@ -9,6 +9,7 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject winCanvas;
     [SerializeField] GameObject loseCanvas;
+    [SerializeField] GameObject pauseCanvas;
     [SerializeField] int gameStartDelaySeconds = 5;
     [SerializeField] int gameLevel = 0;
     private GameTimer timer;
@@ -32,6 +33,7 @@ public class LevelController : MonoBehaviour
         levelTimerFinished = false;
         winCanvas.SetActive(false);
         loseCanvas.SetActive(false);
+        pauseCanvas.SetActive(false);
         winInitiated = false;
         gameStartInitiated = false;
         TriggeredLevelLose = false;
@@ -65,6 +67,11 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled()
     {
         AttackerCount -= 1;
+    }
+
+    public void PauseGame()
+    {
+        pauseCanvas.SetActive(true);
     }
 
     private IEnumerator HandleLevelWin()
