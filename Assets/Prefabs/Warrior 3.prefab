@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &71896666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71896667}
+  m_Layer: 0
+  m_Name: Projectile Position 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71896667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71896666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.568, y: -0.067, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2188437948229911323}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &945724536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945724537}
+  m_Layer: 0
+  m_Name: Projectile Position 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &945724537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945724536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.576, y: -0.206, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2188437948229911323}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2188437948229911321
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +89,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2188437949403598488}
+  - {fileID: 71896667}
+  - {fileID: 945724537}
   m_Father: {fileID: 691911856885324688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107,7 +169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2188437949403598487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.342, y: -0.049, z: 0}
+  m_LocalPosition: {x: 0.585, y: 0.081, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2188437948229911323}
@@ -122,10 +184,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 691911856885324688}
-  - component: {fileID: 2188437949936134618}
   - component: {fileID: 2188437949936134617}
   - component: {fileID: 6664063371817762223}
   - component: {fileID: 7029021701679492055}
+  - component: {fileID: 1400337006}
   m_Layer: 0
   m_Name: Warrior 3
   m_TagString: Untagged
@@ -148,23 +210,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2188437949936134618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301670223091458296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66e23ee9fb7b75b40a2d4a0274e0a1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crystalCost: 100
-  createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
-  projectile: {fileID: 5085305681389300000, guid: d47a6b884632f444cb392f2dac97536e,
-    type: 3}
-  projectilePosition: {fileID: 2188437949403598487}
 --- !u!95 &2188437949936134617
 Animator:
   serializedVersion: 3
@@ -225,3 +270,24 @@ MonoBehaviour:
   startingHealth: 5
   deathVFX: {fileID: 194062, guid: 06c8acfd3b6e31649a597fef4cdd320f, type: 3}
   deathSFX: {fileID: 0}
+--- !u!114 &1400337006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301670223091458296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defad288435674341a7b8e4f87091d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystalCost: 100
+  createVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  projectile: {fileID: 5085305681389300000, guid: d47a6b884632f444cb392f2dac97536e,
+    type: 3}
+  projectilePosition: {fileID: 2188437949403598487}
+  attackLaneFirst: 0
+  additionalProjectilePositions:
+  - {fileID: 71896666}
+  - {fileID: 945724536}

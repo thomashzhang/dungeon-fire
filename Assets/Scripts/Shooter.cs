@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Shooter : Mercenary
 {
-    [SerializeField] GameObject projectile, projectilePosition;
+    [SerializeField] protected GameObject projectile, projectilePosition;
     private AttackerSpawner laneAttackerSpawner;
     private Animator animator;
-    private GameObject projectileParent;
+    protected GameObject projectileParent;
     const string PROJECTILE_PARENT_NAME = "Projectiles";
     // Start is called before the first frame update
     protected override void Start()
@@ -66,7 +66,7 @@ public class Shooter : Mercenary
         return false;
     }
 
-    public void Fire()
+    public virtual void Fire()
     {
         var createdProjectile = Instantiate(projectile, projectilePosition.transform.position, projectilePosition.transform.rotation);
         createdProjectile.transform.parent = projectileParent.transform;

@@ -37,7 +37,8 @@ public class MultilaneProjectile : Projectile
         targetAttacker = attackers
             .Where(attacker => attacker.transform.position.x > transform.position.x)
             .DefaultIfEmpty()
-            .Aggregate((curMin, attacker) => (curMin == null || attacker.transform.position.x < curMin.transform.position.x ? attacker : curMin));
+            .OrderBy(attacker => (attacker.transform.position - transform.position).sqrMagnitude)
+            .FirstOrDefault();
         if (targetAttacker != null)
         {
             targetAttackerLastPosition = targetAttacker.transform.position;
