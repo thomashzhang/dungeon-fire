@@ -31,18 +31,25 @@ public class MultilaneProjectile : Projectile
 
     private void CalculateClosestAttackerToTarget()
     {
-        var attackers = FindObjectsOfType<Attacker>();
-        // Where filters out attackers that are behind the projectile at spawn time
-        // Aggregate acts as a .Min with a key where we're grabbing the minimum position x
-        targetAttacker = attackers
-            .Where(attacker => attacker.transform.position.x > transform.position.x)
-            .DefaultIfEmpty()
-            .OrderBy(attacker => (attacker.transform.position - transform.position).sqrMagnitude)
-            .FirstOrDefault();
-        if (targetAttacker != null)
+        try
         {
-            targetAttackerLastPosition = targetAttacker.transform.position;
-            targetAttackerFound = true;
+            var attackers = FindObjectsOfType<Attacker>();
+            // Where filters out attackers that are behind the projectile at spawn time
+            // Aggregate acts as a .Min with a key where we're grabbing the minimum position x
+            targetAttacker = attackers
+                .Where(attacker => attacker.transform.position.x > transform.position.x)
+                .DefaultIfEmpty()
+                .OrderBy(attacker => (attacker.transform.position - transform.position).sqrMagnitude)
+                .FirstOrDefault();
+            if (targetAttacker != null)
+            {
+                targetAttackerLastPosition = targetAttacker.transform.position;
+                targetAttackerFound = true;
+            }
+        }
+        catch
+        {
+            targetAttackerFound = false;
         }
     }
 

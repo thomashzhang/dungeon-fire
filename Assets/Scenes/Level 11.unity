@@ -470,6 +470,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3725686791142857089, guid: ea64d7f50b82bf54b9833363aac368a9,
         type: 3}
+    - target: {fileID: 659995819878517188, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: minSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 659995819878517188, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: maxSpawnDelay
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 659995821365468331, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
@@ -481,6 +491,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3725686791142857089, guid: ea64d7f50b82bf54b9833363aac368a9,
         type: 3}
+    - target: {fileID: 659995821365468331, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: minSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 659995821365468331, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: maxSpawnDelay
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 659995821409096326, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
@@ -492,6 +512,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3725686791142857089, guid: ea64d7f50b82bf54b9833363aac368a9,
         type: 3}
+    - target: {fileID: 659995821409096326, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: minSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 659995821409096326, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: maxSpawnDelay
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 659995821575039702, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: attackerSpawnList.Array.size
@@ -524,6 +554,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3725686791142857089, guid: ea64d7f50b82bf54b9833363aac368a9,
         type: 3}
+    - target: {fileID: 659995821774543294, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: minSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 659995821774543294, guid: 1d839c7f76e98f94e9a165b8478cb742,
+        type: 3}
+      propertyPath: maxSpawnDelay
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6917797536587995476, guid: 1d839c7f76e98f94e9a165b8478cb742,
         type: 3}
       propertyPath: m_Name
@@ -1852,7 +1892,7 @@ PrefabInstance:
     - target: {fileID: 487561927247794328, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
       propertyPath: crystals
-      value: 70
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 487561927271674140, guid: 28a26b942d9a6774da9ed240fa866cd7,
         type: 3}
