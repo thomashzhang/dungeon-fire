@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: fb964c5f7f20fc146a763a8518d443d1
+guid: e2cf56b9d1548d14a850434e55f11dbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3318554129110052977
-    second: warrior 3 projectile_0
+      213: -5357756999233745432
+    second: warrior-3-projectile_0
   - first:
-      213: 2873755014772880981
-    second: warrior 3 projectile_1
+      213: -3773640722562151631
+    second: warrior-3-projectile_1
   - first:
-      213: 9130508279450520353
-    second: warrior 3 projectile_2
+      213: -1436637934599544531
+    second: warrior-3-projectile_2
   - first:
-      213: -6802944314753730529
-    second: warrior 3 projectile_3
+      213: 5236678023568603563
+    second: warrior-3-projectile_3
   - first:
-      213: -2722432164730329507
-    second: warrior 3 projectile_4
+      213: -5281880031245032174
+    second: warrior-3-projectile_4
   - first:
-      213: -5901534374635846123
-    second: warrior 3 projectile_5
+      213: -5280018717253825372
+    second: warrior-3-projectile_5
   - first:
-      213: 6150796188288973216
-    second: warrior 3 projectile_6
+      213: 8557811757440365993
+    second: warrior-3-projectile_6
   - first:
-      213: -8334163636931169402
-    second: warrior 3 projectile_7
+      213: -2630075493108721155
+    second: warrior-3-projectile_7
   - first:
-      213: -7512766904293769704
-    second: warrior 3 projectile_8
+      213: -2242398757387598323
+    second: warrior-3-projectile_8
   - first:
-      213: 735817424535954283
-    second: warrior 3 projectile_9
+      213: 2257644803721008640
+    second: warrior-3-projectile_9
   - first:
-      213: 6321464082063452503
-    second: warrior 3 projectile_10
+      213: 8523551507127132890
+    second: warrior-3-projectile_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: warrior 3 projectile_10
+      name: warrior-3-projectile_10
       rect:
         serializedVersion: 2
-        x: 1412
-        y: 509
-        width: 426
-        height: 106
+        x: 1421
+        y: 545
+        width: 429
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75968cf071a5ab750800000000000000
-      internalID: 6321464082063452503
+      spriteID: ad2ee0f9fecb94670800000000000000
+      internalID: 8523551507127132890
       vertices: []
       indices: 
       edges: []
